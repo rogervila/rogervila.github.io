@@ -1,0 +1,17 @@
+---
+layout: null
+---
+
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Roger Vilà -- Developer -- @_rogervila
+
+# TECHNOLOGY COLOPHON
+
+    BULMA, JEKYLL
+
+# SITE
+
+Last update: {{ site.time }}

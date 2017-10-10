@@ -1,0 +1,175 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laravel, Vue.js, React, Angular - Roger Vilà</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}assets/app.css?v={{ site.time | date: '%s%U' }}">
+</head>
+<body>
+    <header class="hero is-primary is-large header-image" id="home">
+        <div class="hero-head">
+            <nav class="nav">
+                <div class="container">
+                    <div class="nav-left">
+                        <span class="nav-item">
+                            &nbsp;&nbsp;
+                            Roger Vilà
+                        </span>
+                    </div>
+                    <span class="nav-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                    <div class="nav-right nav-menu">
+                        {% comment %}
+                        <a class="nav-item is-active">
+                            Home
+                        </a>
+                        <a class="nav-item">
+                            Examples
+                        </a>
+                        <a class="nav-item">
+                            Documentation
+                        </a>
+                        {% endcomment %}
+                        <span class="nav-item">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/rogervila" class="button is-secondary">
+                                <span class="icon">
+                                    <i class="fa fa-github"></i>
+                                </span>
+                                <span>Github</span>
+                            </a>
+                        </span>
+                        <span class="nav-item">
+                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/_rogervila" class="button is-primary">
+                                <span class="icon">
+                                    <i class="fa fa-twitter"></i>
+                                </span>
+                                <span>Twitter</span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-2">
+                    Hello, my name is <strong>Roger Vilà</strong>
+                </h1>
+                <p>
+                    <a class="button is-outlined" data-chat-open>
+                        <span class="icon">
+                            <i class="fa fa-commenting-o"></i>
+                        </span>
+                        <span>
+                            Chat with me
+                        </span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="section main">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-4">
+                    <div class="panel">
+                        <div class="panel-block section">
+                            <p class="title has-text-centered">
+                                <i class="fa fa-cogs icon-block"></i>
+                            </p>
+                            <div class="content">
+                                <p>
+                                    I have experience with PHP,
+                                    especially with frameworks like
+                                    <strong>Laravel and Lumen</strong>
+                                    <strong>Symfony and Sylex</strong>,
+                                    and <strong>Phalcon</strong>, among others.
+                                    <br>
+                                    I also have experience with Javascript,
+                                    including the most popular frontend frameworks like
+                                    <strong>Vue.js</strong>,
+                                    <strong>React</strong> or
+                                    <strong>AngularJS</strong>.
+                                </p>
+                            </div>
+                            {% comment %}
+                            <br>
+                            <p class="has-text-centered"><a class="button is-info is-outlined">Action</a></p>
+                            {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="panel">
+                        <div class="panel-block section">
+                            <p class="title has-text-centered"><i class="fa fa-bar-chart icon-block"></i></p>
+                            <div class="content">
+                                <p>
+                                    <!-- TODO -->
+                                </p>
+                            </div>
+                            {% comment %}
+                            <br>
+                            <p class="has-text-centered"><a class="button is-info is-outlined">Action</a></p>
+                            {% endcomment %}
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column is-4">
+                    <div class="panel">
+                        <div class="panel-block section">
+                            <p class="title has-text-centered"><i class="fa fa-cloud icon-block"></i></p>
+                            <div class="content">
+                                <p>
+                                    <!-- TODO -->
+                                </p>
+                            </div>
+                            {% comment %}
+                            <br>
+                            <p class="has-text-centered"><a class="button is-info is-outlined">Action</a></p>
+                            {% endcomment %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="hero-cta">
+        <nav class="level">
+            <div class="level-item has-text-centered">
+                <a href="#" data-chat-open class="button is-large is-primary">
+                    <span class="icon">
+                        <i class="fa fa-commenting-o"></i>
+                    </span>
+                    <span>Chat with me! </span>
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    &copy; <time>{{ site.time | date:"%Y" }}</time> by <strong>Roger Vilà</strong>. The website content
+                    is licensed <a target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script async defer type="text/javascript" src="{{ site.url }}/assets/app.js?v={{ site.time | date: '%s%U' }}"></script>
+</body>
+</html>
