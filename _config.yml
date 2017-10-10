@@ -1,10 +1,6 @@
 ---
 title: Roger Vilà
-url: https://rogervila.github.io/
-exclude: ['package.json', 'package-lock.json', 'webpack.mix.js', 'node_modules','vendor','Gemfile','Gemfile.lock','mix-manifest.json','LICENSE']
 timezone: Europe/Madrid
-cloudinary:
-  url: 'https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/'
 collections:
   posts:
     title: Posts
@@ -12,5 +8,18 @@ collections:
   uploads:
     title: Uploads
     output: true
+url: https://rogervila.github.io/
+exclude:
+- package.json
+- package-lock.json
+- webpack.mix.js
+- node_modules
+- vendor
+- Gemfile
+- Gemfile.lock
+- mix-manifest.json
+- LICENSE
+cloudinary:
+  url: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/
 plugins:
-  - jekyll-sitemap
+- jekyll-sitemap
