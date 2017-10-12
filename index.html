@@ -22,6 +22,13 @@ layout: compress
         }
     </script>
 
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}favicons/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.url }}favicons/manifest.json">
+    <link rel="mask-icon" href="{{ site.url }}favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
     <meta property="og:locale" content="en">
     <meta property="og:type" content="profile">
     <meta property="og:gender" content="male">
@@ -72,6 +79,14 @@ layout: compress
                             </a>
                         </span>
                         <span class="nav-item">
+                            <a target="_blank" rel="noopener noreferrer" href="https://es.linkedin.com/in/rogervilacamon" class="button is-info">
+                                <span class="icon">
+                                    <i class="fa fa-linkedin"></i>
+                                </span>
+                                <span>Linkedin</span>
+                            </a>
+                        </span>
+                        <span class="nav-item">
                             <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/_rogervila" class="button is-primary">
                                 <span class="icon">
                                     <i class="fa fa-twitter"></i>
@@ -118,7 +133,22 @@ layout: compress
                                     <strong>Laravel and Lumen</strong>
                                     <strong>Symfony and Sylex</strong>,
                                     and <strong>Phalcon</strong>, among others.
-                                    <br>
+                                </p>
+                            </div>
+                            {% comment %}
+                            <br>
+                            <p class="has-text-centered"><a class="button is-info is-outlined">Action</a></p>
+                            {% endcomment %}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-4">
+                    <div class="panel">
+                        <div class="panel-block section">
+                            <p class="title has-text-centered"><i class="fa fa-file-code-o icon-block"></i></p>
+                            <div class="content">
+                                <p>
                                     I also have experience with Javascript,
                                     including the most popular frontend frameworks like
                                     <strong>Vue.js</strong>,
@@ -133,13 +163,18 @@ layout: compress
                         </div>
                     </div>
                 </div>
+
                 <div class="column is-4">
                     <div class="panel">
                         <div class="panel-block section">
-                            <p class="title has-text-centered"><i class="fa fa-bar-chart icon-block"></i></p>
+                            <p class="title has-text-centered"><i class="fa fa-briefcase icon-block"></i></p>
                             <div class="content">
                                 <p>
-                                    <!-- TODO -->
+                                    <strong>SaaS</strong>,
+                                    <strong>CMS</strong>,
+                                    <strong>E-commerce</strong>
+                                    and custom application development
+                                    are the main fields I have been working on.
                                 </p>
                             </div>
                             {% comment %}
@@ -148,25 +183,8 @@ layout: compress
                             {% endcomment %}
                         </div>
                     </div>
-
                 </div>
-                <div class="column is-4">
-                    <div class="panel">
-                        <div class="panel-block section">
-                            <p class="title has-text-centered"><i class="fa fa-cloud icon-block"></i></p>
-                            <div class="content">
-                                <p>
-                                    <!-- TODO -->
-                                </p>
-                            </div>
-                            {% comment %}
-                            <br>
-                            <p class="has-text-centered"><a class="button is-info is-outlined">Action</a></p>
-                            {% endcomment %}
-                        </div>
-                    </div>
 
-                </div>
             </div>
         </div>
     </main>

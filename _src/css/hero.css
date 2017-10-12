@@ -1,6 +1,14 @@
 body {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
+@media(max-width: 768px) {
+    nav.nav{
+        display: none;
+    }
+}
+.title{
+    line-height: 1.4em;
+}
 .header-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.49),rgba(0, 0, 0, 0.89)),url('https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/iphone-4-closeup_bblll1');
 }
@@ -17,6 +25,12 @@ body {
 }
 .content strong {
     color: #95A5A6;
+}
+.panel-block.section {
+    min-height: 310px;
+}
+.panel-block.section .content{
+    margin-top: 34px;
 }
 .panel-block.section p {
   font-size: 17px;

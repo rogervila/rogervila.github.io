@@ -11,12 +11,13 @@
     if (d.head) d.head.appendChild(s);
 })(document, window, 'Chatra');
 
-// Events
-let listeners = document.querySelectorAll('[data-chat-open]');
+document.addEventListener('DOMContentLoaded', function () {
+    let listeners = document.querySelectorAll('[data-chat-open]');
 
-listeners.forEach(listener => {
-    listener.addEventListener('click', function (e) {
-        e.preventDefault();
-        Chatra('expandWidget');
+    listeners.forEach(listener => {
+        listener.addEventListener('click', function (e) {
+            e.preventDefault();
+            Chatra('expandWidget');
+        });
     });
 });
