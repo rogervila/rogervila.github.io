@@ -1,4 +1,7 @@
 ---
+---
+
+---
 title: Laravel, Vue.js, React, Angular - Roger Vilà
 url: http://rogervila.github.io.dev/
 exclude: ['package.json', 'package-lock.json', 'webpack.mix.js', 'node_modules','vendor','Gemfile','Gemfile.lock','mix-manifest.json','LICENSE']
