@@ -9,9 +9,7 @@
     s.defer = true;
     s.src = 'https://call.chatra.io/chatra.js';
     if (d.head) d.head.appendChild(s);
-})(document, window, 'Chatra');
 
-document.addEventListener('DOMContentLoaded', function () {
     let listeners = document.querySelectorAll('[data-chat-open]');
 
     listeners.forEach(listener => {
@@ -20,4 +18,4 @@ document.addEventListener('DOMContentLoaded', function () {
             Chatra('expandWidget');
         });
     });
-});
+})(document, window, 'Chatra');
