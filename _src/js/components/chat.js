@@ -15,7 +15,7 @@
     listeners.forEach(listener => {
         listener.addEventListener('click', function (e) {
             e.preventDefault();
-            Chatra('expandWidget');
+            Chatra('openChat');
         });
     });
 })(document, window, 'Chatra');

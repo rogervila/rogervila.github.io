@@ -1,7 +1,6 @@
 ---
 layout: compress
 ---
-
 <!doctype html>
 <html lang="en">
 <head prefix="og: http://ogp.me/ns/profile# fb: http://ogp.me/ns/fb#">
@@ -49,8 +48,7 @@ layout: compress
                 <div class="container">
                     <div class="nav-left">
                         <span class="nav-item">
-                            &nbsp;&nbsp;
-                            Roger Vilà
+
                         </span>
                     </div>
                     <span class="nav-toggle">
@@ -101,7 +99,7 @@ layout: compress
         <div class="hero-body">
             <div class="container has-text-centered">
                 <h1 class="title is-2">
-                    Hello, my name is <strong>Roger Vilà</strong>
+                    Hello, I'm <strong>Roger Vilà</strong>
                 </h1>
                 <p>
                     <a class="button is-outlined" data-chat-open>
@@ -109,7 +107,7 @@ layout: compress
                             <i class="fa fa-commenting-o"></i>
                         </span>
                         <span>
-                            Chat with me
+                            May I help you?
                         </span>
                     </a>
                 </p>
@@ -206,12 +204,14 @@ layout: compress
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    &copy; <time>{{ site.time | date:"%Y" }}</time> by <strong>Roger Vilà</strong>. The website content
-                    is licensed <a target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+                    &copy; <time>{{ site.time | date:"%Y" }}</time> by <strong>Roger Vilà</strong>.
+                    {% comment %}
+                    The website content is licensed <a target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
+                    {% endcomment %}
                 </p>
             </div>
         </div>
     </footer>
-    <script async defer type="text/javascript" src="{{ site.url }}/assets/app.js?v={{ site.time | date: '%s%U' }}"></script>
+    <script async defer src="{{ site.url }}/assets/app.js?v={{ site.time | date: '%s%U' }}"></script>
 </body>
 </html>
