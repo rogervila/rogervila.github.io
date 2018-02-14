@@ -1,0 +1,9 @@
+version: '3'
+services:
+  rogervila.es:
+    image: rogervila.es
+    build:
+      context: ./
+    ports:
+      - '80:80'
+      - '443:80'

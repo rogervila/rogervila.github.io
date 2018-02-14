@@ -8,7 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-url: https://rogervila.es/
+url: https://rogervila.es
 exclude:
 - package.json
 - package-lock.json
@@ -19,6 +19,12 @@ exclude:
 - Gemfile.lock
 - mix-manifest.json
 - LICENSE
+- Dockerfile
+- docker-compose.yml
+- dev.sh
+- production.sh
+- Dockerfile-development
+- docker-compose.development.yml
 cloudinary:
   url: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/
 plugins:
