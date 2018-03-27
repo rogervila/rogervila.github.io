@@ -20,6 +20,6 @@ RUN \
     bundle install && \
     rm -rf /usr/lib/ruby/gems/*/cache/*.gem
 
-EXPOSE 8080
+EXPOSE 4000
 
-CMD jekyll serve -d /_site --watch --force_polling -H 0.0.0.0 -P 8080
+CMD jekyll serve -d /_site --watch --force_polling -H 0.0.0.0 -P 4000

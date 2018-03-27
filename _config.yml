@@ -22,7 +22,7 @@ exclude:
 - Dockerfile
 - docker-compose.yml
 - dev.sh
-- production.sh
+- staging.sh
 - Dockerfile-development
 - docker-compose.development.yml
 cloudinary:
