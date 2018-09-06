@@ -6,7 +6,6 @@ layout: compress
 <html lang="en">
 <head prefix="og: http://ogp.me/ns/profile# fb: http://ogp.me/ns/fb#">
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,7 +14,7 @@ layout: compress
         {
             "@context": "http://schema.org",
             "@type": "Person",
-            "image": "https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/iphone-4-closeup_bblll1",
+            "image": "https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/iphone-4-closeup_bblll1?v={{ site.time | date: '%s%U' }}",
             "jobTitle": "Developer",
             "name": "Roger Vilà",
             "url": "{{ site.url }}/"
@@ -38,7 +37,7 @@ layout: compress
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="I Develop things.">
     <meta name="twitter:title" content="{{ site.title }}">
-    <meta name="twitter:image" content="https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/iphone-4-closeup_bblll1">
+    <meta name="twitter:image" content="https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/iphone-4-closeup_bblll1?v={{ site.time | date: '%s%U' }}">
     <meta name="twitter:creator" content="@_rogervila">
 </head>
 <body>
