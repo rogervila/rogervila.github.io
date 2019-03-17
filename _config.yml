@@ -33,6 +33,8 @@ commentbox_io:
   id: 5674748138749952-proj
 google_analytics:
   id: UA-55617377-1
+cookiebot:
+  id: 81f0d276-2838-45b4-88c7-634ca8b9a658
 lang: en_US
 description: Roger Vilà is a developer specialized on web applications build on top
   of laravel framework.

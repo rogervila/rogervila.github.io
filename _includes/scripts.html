@@ -1,1 +1,4 @@
 <script defer src="{{ site.url }}/assets/js/app.js?v={{ site.time | date: '%s%U' }}"></script>
+{% if site.cookiebot %}
+<script id="Cookiebot" src="//consent.cookiebot.com/uc.js" data-cbid="{{ site.cookiebot.id }}" async defer></script>
+{% endif %}
