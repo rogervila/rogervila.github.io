@@ -1,9 +1,8 @@
-# Jekyll Portfolio Template
+<p align="center"><img width="250" src="https://i.imgur.com/Tuo5DiZ.png" alt="Run SonarQube Scanner with composer" /></p>
+
+# Roger Vilà's Jekyll Portfolio Template
 
 Fork it, change the `_config.yml` settings and use it as your portfolio website
-
-### TODO
-- 
 
 ### Troubleshooting
 
