@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 {% if site.cloudinary and page.cloudinary %}
 <div style="height:200px; background-image: url({{ site.cloudinary.base }}/f_auto,q_auto:best,w_auto,h_200,c_fill,g_auto:subject,dpr_auto/{{ page.cloudinary }})" class="has-background-image"></div>
 {% else %}
