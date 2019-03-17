@@ -1,2 +1,5 @@
-node_modules
+Gemfile.lock
 _site
+_javascript/node_modules
+_javascript/mix-manifest.json
+_javascript/package-lock.json

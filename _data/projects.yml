@@ -1,0 +1,23 @@
+-
+  name: Array Diff Multidimensional
+  description: Compare the difference between <br> two multidimensional arrays
+  url: https://github.com/rogervila/array-diff-multidimensional
+  images:
+    - https://poser.pugx.org/rogervila/array-diff-multidimensional/downloads
+    - https://img.shields.io/github/stars/rogervila/array-diff-multidimensional.svg?style=social
+
+-
+  name: Provably Fair
+  description: PHP implementation of Bustabit's <br> Provably Fair system
+  url: https://github.com/rogervila/provably-fair
+  images:
+    - https://poser.pugx.org/rogervila/provably-fair/downloads
+    - https://img.shields.io/github/stars/rogervila/provably-fair.svg?style=social
+
+-
+  name: PHP SonarQube Scanner
+  description: Run SonarQube Scanner with composer by just running <code>vendor/bin/sonar-scanner</code>
+  url: https://github.com/rogervila/php-sonarqube-scanner
+  images:
+    - https://poser.pugx.org/rogervila/php-sonarqube-scanner/downloads
+    - https://img.shields.io/github/stars/rogervila/php-sonarqube-scanner.svg?style=social

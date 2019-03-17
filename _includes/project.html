@@ -1,0 +1,17 @@
+<div class="column is-4 is-flex">
+    <div class="card" style="width:100%">
+        <header class="card-header">
+            <p class="card-header-title">{{ project.name }}</p>
+        </header>
+        <div class="card-content">
+            <div class="content">{{ project.description }}</div>
+        </div>
+        <footer class="card-footer">
+            {% for image in project.images %}
+            <a target="_blank" rel="noopener noreferrer" href="{{ project.url }}" class="card-footer-item">
+                <img class="lazy" data-src="{{ image }}" src="{{ site.url }}/assets/svg/loading.svg" alt="{{ project.name }}">
+            </a>
+            {% endfor %}
+        </footer>
+    </div>
+</div>

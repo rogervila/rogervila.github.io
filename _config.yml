@@ -1,6 +1,57 @@
----
-title: Laravel, Vue.js, React, Angular - Roger Vilà
+# General settings
 timezone: Europe/Madrid
+repository: rogervila/rogervila.github.io
+
+# Services
+cloudinary:
+  base: https://res.cloudinary.com/rogervila/image/upload/
+chatra:
+  id: DMxNajG68hYYtyPsd
+# disqus:
+#   shortname: DISQUS-SHORTNAME-GOES-HERE
+commentbox_io:
+  id: 5674748138749952-proj
+google_analytics:
+  id: UA-012345678-9
+
+# SEO
+lang: en_US
+title: Laravel & Vue.js Developer - Roger Vilà
+description: Roger Vilà is a developer specialized on web applications build on top of laravel framework.
+url: https://rogervila.es
+# url: http://localhost:4000
+author:
+  twitter: _rogervila
+twitter:
+  username: _rogervila
+  card: summary
+  hashtag: rogervila
+github:
+  username: rogervila
+linkedin: https://es.linkedin.com/in/rogervilacamon
+logo: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto,w_112,h_28,c_lpad,b_white,dpr_auto/logo_qqflde
+social:
+  name: Roger Vilà
+  links:
+    - https://github.com/rogervila
+    - https://twitter.com/_rogervila
+webmaster_verifications:
+  google: X3uvg5AB1-UMV9MBVlvSylNxOc93YJlO1Pq4uBb588A
+  bing: B78749ACD39E931F3E7367CCB8D8430C
+  # alexa: VERIFICATION-CODE-GOES-HERE
+  # yandex: VERIFICATION-CODE-GOES-HERE
+  # baidu: VERIFICATION-CODE-GOES-HERE
+
+# Pagination
+paginate: 9
+paginate_path: "/blog/page/:num/"
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Collections
 collections:
   posts:
     title: Posts
@@ -8,24 +59,43 @@ collections:
   uploads:
     title: Uploads
     output: true
-url: https://rogervila.es
+
+# Ignored files
 exclude:
-- package.json
-- package-lock.json
-- webpack.mix.js
-- node_modules
-- vendor
-- Gemfile
-- Gemfile.lock
-- mix-manifest.json
-- LICENSE
-- Dockerfile
-- docker-compose.yml
-- dev.sh
-- staging.sh
-- Dockerfile-development
-- docker-compose.development.yml
-cloudinary:
-  url: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - Dockerfile
+  - docker-compose.yml
+  - .editorconfig
+  - .gitignore
+  - .dockerignore
+
+# Plugins
 plugins:
-- jekyll-sitemap
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-github-metadata
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/blog/:title"
+  -
+    scope:
+      path: "assets/**"
+    values:
+      sitemap: false

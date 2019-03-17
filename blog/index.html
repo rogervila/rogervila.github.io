@@ -1,0 +1,32 @@
+---
+title: Blog - Roger Vilà
+---
+<section class="section">
+    <div class="container">
+        <h1 class="title">BLOG</h1>
+        <div class="columns is-multiline">
+            {% for post in paginator.posts %}
+                <div class="column is-4 is-flex">
+                    {% include article.html post=post %}
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+
+    <div class="buttons has-addons is-centered">
+        {% if paginator.previous_page %}
+        <a href="{{ site.url }}/{{ paginator.previous_page_path }}" class="button">
+            &laquo; Previous
+        </a>
+        {% else %}
+        <button class="button" disabled>&laquo; Previous</button>
+        {% endif %}
+        {% if paginator.next_page %}
+        <a href="{{ site.url }}/{{ paginator.next_page_path }}" class="button">
+            Next &raquo;
+        </a>
+        {% else %}
+        <button class="button" disabled>Next &raquo;</button>
+        {% endif %}
+    </div>
+</div>

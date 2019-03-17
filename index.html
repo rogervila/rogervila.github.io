@@ -1,216 +1,36 @@
 ---
-layout: compress
+title: Laravel & Vue.js Developer - Roger Vilà
 ---
-
-<!doctype html>
-<html lang="en">
-<head prefix="og: http://ogp.me/ns/profile# fb: http://ogp.me/ns/fb#">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/app.css?v={{ site.time | date: '%s%U' }}">
-    <script type="application/ld+json">
-        {
-            "@context": "http://schema.org",
-            "@type": "Person",
-            "image": "https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/iphone-4-closeup_bblll1?v={{ site.time | date: '%s%U' }}",
-            "jobTitle": "Developer",
-            "name": "Roger Vilà",
-            "url": "{{ site.url }}/"
-        }
-    </script>
-
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/favicons/favicon-16x16.png">
-    <link rel="manifest" href="{{ site.url }}/favicons/manifest.json">
-    <link rel="mask-icon" href="{{ site.url }}/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
-
-    <meta property="og:locale" content="en">
-    <meta property="og:type" content="profile">
-    <meta property="og:gender" content="male">
-    <meta property="og:first_name" content="Roger">
-    <meta property="og:last_name" content="Vilà">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:description" content="I Develop things.">
-    <meta name="twitter:title" content="{{ site.title }}">
-    <meta name="twitter:image" content="https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto,dpr_auto,w_auto,c_scale,g_auto/iphone-4-closeup_bblll1?v={{ site.time | date: '%s%U' }}">
-    <meta name="twitter:creator" content="@_rogervila">
-</head>
-<body>
-    <header class="hero is-primary is-large header-image" id="home">
-        <div class="hero-head">
-            <nav class="nav">
-                <div class="container">
-                    <div class="nav-left">
-                        <span class="nav-item">
-
-                        </span>
-                    </div>
-                    <span class="nav-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
-                    <div class="nav-right nav-menu">
-                        {% comment %}
-                        <a class="nav-item is-active">
-                            Home
-                        </a>
-                        <a class="nav-item">
-                            Examples
-                        </a>
-                        <a class="nav-item">
-                            Documentation
-                        </a>
-                        {% endcomment %}
-                        <span class="nav-item">
-                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/rogervila" class="button is-secondary">
-                                <span class="icon">
-                                    <i class="fa fa-github"></i>
-                                </span>
-                                <span>Github</span>
-                            </a>
-                        </span>
-                        <span class="nav-item">
-                            <a target="_blank" rel="noopener noreferrer" href="https://es.linkedin.com/in/rogervilacamon" class="button is-info">
-                                <span class="icon">
-                                    <i class="fa fa-linkedin"></i>
-                                </span>
-                                <span>Linkedin</span>
-                            </a>
-                        </span>
-                        <span class="nav-item">
-                            <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/_rogervila" class="button is-primary">
-                                <span class="icon">
-                                    <i class="fa fa-twitter"></i>
-                                </span>
-                                <span>Twitter</span>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-            </nav>
+<header>
+    {% assign image = site.data.content.home.header.image %}
+    {% include me.html image=image %}
+</header>
+<section class="section has-background-light">
+    <div class="container">
+        <h2 class="title">{{ site.data.content.home.projects.title }}</h2>
+        <div class="columns is-multiline">
+            {% for project in site.data.projects limit:3 %}
+            {% include project.html project=project %}
+            {% endfor %}
         </div>
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <h1 class="title is-2">
-                    Hello, I'm <strong>Roger Vilà</strong>
-                </h1>
-                <p>
-                    <a class="button is-outlined" data-chat-open>
-                        <span class="icon">
-                            <i class="fa fa-commenting-o"></i>
-                        </span>
-                        <span>
-                            May I help you?
-                        </span>
-                    </a>
-                </p>
-            </div>
+
+        <div class="content">
+            <a target="_blank" rel="noopener noreferrer" href="{{ site.data.content.home.projects.url }}">{{ site.data.content.home.projects.call }}</a>
         </div>
-    </header>
-
-    <main class="section main">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-4">
-                    <div class="panel">
-                        <div class="panel-block section">
-                            <p class="title has-text-centered">
-                                <i class="fa fa-cogs icon-block"></i>
-                            </p>
-                            <div class="content">
-                                <p>
-                                    I have experience with PHP,
-                                    especially with frameworks like
-                                    <strong>Laravel and Lumen</strong>
-                                    <strong>Symfony and Sylex</strong>,
-                                    and <strong>Phalcon</strong>, among others.
-                                </p>
-                            </div>
-                            {% comment %}
-                            <br>
-                            <p class="has-text-centered"><a class="button is-info is-outlined">Action</a></p>
-                            {% endcomment %}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column is-4">
-                    <div class="panel">
-                        <div class="panel-block section">
-                            <p class="title has-text-centered"><i class="fa fa-file-code-o icon-block"></i></p>
-                            <div class="content">
-                                <p>
-                                    I also have experience with Javascript,
-                                    including the most popular frontend frameworks like
-                                    <strong>Vue.js</strong>,
-                                    <strong>React</strong> or
-                                    <strong>AngularJS</strong>.
-                                </p>
-                            </div>
-                            {% comment %}
-                            <br>
-                            <p class="has-text-centered"><a class="button is-info is-outlined">Action</a></p>
-                            {% endcomment %}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column is-4">
-                    <div class="panel">
-                        <div class="panel-block section">
-                            <p class="title has-text-centered"><i class="fa fa-briefcase icon-block"></i></p>
-                            <div class="content">
-                                <p>
-                                    <strong>SaaS</strong>,
-                                    <strong>CMS</strong>,
-                                    <strong>E-commerce</strong>
-                                    and custom application development
-                                    are the main fields I have been working on.
-                                </p>
-                            </div>
-                            {% comment %}
-                            <br>
-                            <p class="has-text-centered"><a class="button is-info is-outlined">Action</a></p>
-                            {% endcomment %}
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </main>
-
-    <div class="hero-cta">
-        <nav class="level">
-            <div class="level-item has-text-centered">
-                <a href="#" data-chat-open class="button is-large is-primary">
-                    <span class="icon">
-                        <i class="fa fa-commenting-o"></i>
-                    </span>
-                    <span>Chat with me! </span>
-                </a>
-            </div>
-        </nav>
     </div>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="content has-text-centered">
-                <p>
-                    &copy; <time>{{ site.time | date:"%Y" }}</time> by <strong>Roger Vilà</strong>.
-                    {% comment %}
-                    The website content is licensed <a target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
-                    {% endcomment %}
-                </p>
+</section>
+<section class="section">
+    <div class="container">
+        <h2 class="title">{{ site.data.content.home.articles.title }}</h2>
+        <div class="columns is-multiline">
+            {% for post in site.posts limit:3 %}
+            <div class="column is-4 is-flex">
+                {% include article.html post=post %}
             </div>
+            {% endfor %}
         </div>
-    </footer>
-    <script async defer src="{{ site.url }}/assets/app.js?v={{ site.time | date: '%s%U' }}"></script>
-</body>
-</html>
+        <div class="content">
+            <a href="{{ site.url }}/blog">{{ site.data.content.home.articles.call }}</a>
+        </div>
+    </div>
+</section>

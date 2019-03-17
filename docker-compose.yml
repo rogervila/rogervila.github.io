@@ -1,8 +1,9 @@
 version: '3'
 services:
   rogervila.es:
-    image: rogervila.es
+    container_name: rogervila.es
+    restart: always
     build:
       context: ./
     ports:
-      - '80:80'
+      - '4000:80'

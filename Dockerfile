@@ -1,4 +1,4 @@
-FROM ruby:2.4.2-alpine3.6
+FROM ruby:2.6.1-alpine3.8
 
 LABEL alpine-docs https://wiki.alpinelinux.org/wiki/How_to_get_regular_stuff_working
 
@@ -9,18 +9,12 @@ WORKDIR /usr/src/app
 ADD ./Gemfile /usr/src/app/Gemfile
 
 RUN \
-    echo "JEKYLL_ENV:" && \
-    echo $JEKYLL_ENV && \
-    apk update && \
-    apk add build-base gcc abuild binutils binutils-doc gcc-doc cmake cmake-doc && \
-    gem update --system && \
-    echo "gem: --no-rdoc --no-ri" >> ~/.gemrc && \
-    gem install bundler --no-rdoc --no-ri && \
-    cd /usr/src/app && \
+    apk --update add git build-base gcc abuild binutils binutils-doc gcc-doc cmake cmake-doc && \
+    gem install bundler && \
     bundle install && \
     rm -rf /usr/lib/ruby/gems/*/cache/*.gem
 
-ADD ./ /usr/src/app
+ADD . .
 
 EXPOSE 80
 
