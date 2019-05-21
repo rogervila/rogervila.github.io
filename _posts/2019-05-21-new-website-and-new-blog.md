@@ -37,11 +37,11 @@ As I said before, it comes with **Jekyll support** so, instead of building my si
 
 One of the cons of publishing posts on a **static website** is that **changes must be done manually**. [Sitelaf](https://www.siteleaf.com/) is an **Admin panel for Jekyll sites hosted on Github**, which makes it very easy to create, update and delete posts and collections. I think this tool is a must for any project like this one.
 
-## commentbox.io
+## Commentbox.io
 
 Disqus is the king of comment platforms, but it feels slow. Also, you need a paid plan to remove ads and, since I don’t expect lots of comments on my posts, I think that for, now, it’s not the right solution.
 
-Commentbox.io is a **free alternative to Disqus that comes without ads**. I will make a post that goes deeper with pros and cons about using this service.
+[Commentbox.io](https://commentbox.io) is a **free alternative to Disqus that comes without ads**. I will make a post that goes deeper with pros and cons about using this service.
 
 ## Chatra
 
@@ -69,5 +69,5 @@ Feedback is always welcome, and it helps me to improve my blogging skills.
 
 See you on next post!
 
-> Did you find a typo? Open a new issue! I will correct it as soon as I can.
+> Did you find a typo? [Open a new issue](https://github.com/rogervila/rogervila.github.io/issues)! I will correct it as soon as I can.
 
