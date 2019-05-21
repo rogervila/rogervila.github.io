@@ -1,7 +1,7 @@
 ---
 title: New Website, new Blog
 date: 2019-05-21 22:19:00 +02:00
-image: https://res.cloudinary.com/demo/image/upload/sample
+image: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_1200,h_628,c_fill,g_auto:subject,dpr_auto/computer_g1fykb
 cloudinary: computer_g1fykb
 excerpt_separator: "<!--more-->"
 ---
