@@ -3,12 +3,12 @@ layout: default
 ---
 
 <article class="section">
-    <div class="container">
+    <div class="container" style="max-width:600px">
         <figure>
             {% if site.cloudinary and page.cloudinary %}
-            <img alt="{{ page.title }}" src="{{ site.cloudinary.base }}/f_auto,q_auto:best,w_auto,h_200,c_fill,g_auto:subject,dpr_auto/{{ page.cloudinary }}">
+            <img class="is-block" style="margin-bottom:1rem;width:100%" alt="{{ page.title }}" src="{{ site.cloudinary.base }}/f_auto,q_auto:best,w_auto,h_200,c_fill,g_auto:subject,dpr_auto/{{ page.cloudinary }}">
             {% else %}
-            <img alt="{{ page.title }}" src="{{ page.image }}">
+            <img class="is-block" style="margin-bottom:1rem;width:100%" alt="{{ page.title }}" src="{{ page.image }}">
             {% endif %}
         </figure>
         <header class="content">
