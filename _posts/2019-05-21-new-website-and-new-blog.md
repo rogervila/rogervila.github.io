@@ -4,6 +4,9 @@ date: 2019-05-21 22:19:00 +02:00
 image: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_1200,h_628,c_fill,g_auto:subject,dpr_auto/computer_g1fykb.jpg
 cloudinary: computer_g1fykb
 excerpt_separator: "<!--more-->"
+description: On this very first post, I will explain how this website is made. The
+  list of tools I’m sharinghas not been sponsored at all. I’m using them because they
+  are useful.
 ---
 
 First of all, thank you for Reading this article, because it is the first one that I write. The idea of this blog is to be a repository of tools that I use on my projects. I will also publish bug fixes that I think that can be useful for other developers.  
