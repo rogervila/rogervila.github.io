@@ -5,6 +5,10 @@ layout: compress
 <!doctype html>
 <html lang="{{ site.lang }}">
 <head>
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://consentcdn.cookiebot.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+
     {% if site.google_analytics %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics.id }}"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '{{ site.google_analytics.id }}');</script>
