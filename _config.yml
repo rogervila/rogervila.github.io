@@ -35,7 +35,7 @@ google_analytics:
   id: UA-55617377-1
 cookiebot:
   id: 81f0d276-2838-45b4-88c7-634ca8b9a658
-lang: en_US
+lang: en
 description: Roger Vilà is a developer specialized on web applications build on top
   of laravel framework.
 url: https://rogervila.es
