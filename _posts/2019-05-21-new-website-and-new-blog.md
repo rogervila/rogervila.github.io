@@ -40,11 +40,12 @@ One of the cons of publishing posts on a **static website** is that **changes mu
 
 ## Commentbox.io
 
-Disqus is the king of comment platforms, but it feels slow. Also, you need a paid plan to remove ads and, since I don’t expect lots of comments on my posts, I think that for, now, it’s not the right solution.
+Disqus is the king of comment platforms, but it feels slow. Also, you need a paid plan to remove ads and, since I don’t expect lots of comments on my posts, I think that for, now, commentbox is the right solution.
 
 [Commentbox.io](https://commentbox.io) is a **free alternative to Disqus that comes without ads**. I will make a post that goes deeper with pros and cons about using this service.
 
-## Chatra
+
+## Chatra.io
 
 Chatra is a **real-time chat service**. I discovered it because **one of the founders** is Art Polikarpov, **the creator of [Fotorama](https://fotorama.io)** (one of the most famous jQuery-based image sliders).
 It’s almost plug & play, and its free plan comes with everything I need, so I find it very useful for communicating with my visitors.
