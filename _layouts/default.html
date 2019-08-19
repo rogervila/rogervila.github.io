@@ -10,7 +10,12 @@ layout: compress
     <link rel="preconnect" href="https://consent.cookiebot.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://res.cloudinary.com">
-
+    
+    {% if page.is_post %}
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://storage.googleapis.com">
+    {% endif %}
+    
     {% if site.google_analytics %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics.id }}"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '{{ site.google_analytics.id }}');</script>
