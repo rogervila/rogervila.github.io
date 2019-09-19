@@ -9,7 +9,7 @@ jobs:
           name: Install dependencies
           command: bundle install
       - run:
-          name: Build the static site
+          name: Build the site
           command: bundle exec jekyll build
       - run:
           name: Visual Tests
