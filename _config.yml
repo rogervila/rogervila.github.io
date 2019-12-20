@@ -40,7 +40,8 @@ lang: en
 description: Roger Vilà is a developer specialized on web applications build on top
   of laravel framework.
 url: https://rogervila.es
-author: _rogervila
+author:
+  twitter: _rogervila
 twitter:
   username: _rogervila
   card: summary
