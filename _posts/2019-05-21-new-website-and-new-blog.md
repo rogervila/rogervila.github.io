@@ -36,7 +36,7 @@ As I said before, it comes with **Jekyll support** so, instead of building my si
 
 ## Siteleaf
 
-One of the cons of publishing posts on a **static website** is that **changes must be done manually**. [Sitelaf](https://www.siteleaf.com/) is an **Admin panel for Jekyll sites hosted on Github**, which makes it very easy to create, update and delete posts and collections. I think this tool is a must for any project like this one.
+One of the cons of publishing posts on a **static website** is that **changes must be done manually**. [Siteleaf](https://www.siteleaf.com/) is an **Admin panel for Jekyll sites hosted on Github**, which makes it very easy to create, update and delete posts and collections. I think this tool is a must for any project like this one.
 
 ## Commentbox.io
 
