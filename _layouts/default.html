@@ -4,21 +4,23 @@ layout: compress
 
 <!doctype html>
 <html lang="{{ site.lang }}">
+
 <head>
+    <link rel="preconnect" href="https://instant.page">
     <link rel="preconnect" href="https://www.google-analytics.com">
     <link rel="preconnect" href="https://consentcdn.cookiebot.com">
     <link rel="preconnect" href="https://consent.cookiebot.com">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://res.cloudinary.com">
-    
+
     {% if page.is_post %}
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://storage.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://storage.googleapis.com">
     {% endif %}
-    
+
     {% if site.google_analytics %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics.id }}"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', '{{ site.google_analytics.id }}');</script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', '{{ site.google_analytics.id }}');</script>
     {% endif %}
 
     <meta charset="utf-8">
@@ -45,10 +47,13 @@ layout: compress
     <meta name="commentbox_io" content="{{ site.commentbox_io.id }}">
     {% endif %}
 </head>
+
 <body>
     {% include navbar.html %}
     {{ content }}
     {% include footer.html %}
     {% include scripts.html %}
+    <script src="https://instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
 </body>
+
 </html>
