@@ -25,7 +25,19 @@ layout: compress
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/app.css?v={{ site.time | date: '%s%U' }}">
+    <style>
+        [data-cloak]>* {
+            display: none;
+            visibility: hidden;
+        }
+
+        [data-cloak]::before {
+            content: "loading…";
+        }
+    </style>
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/app.css?v={{ site.time | date: '%s%U' }}">
+    </noscript>
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/favicon-32x32.png">
@@ -48,7 +60,7 @@ layout: compress
     {% endif %}
 </head>
 
-<body>
+<body data-cloak>
     {% include navbar.html %}
     {{ content }}
     {% include footer.html %}
