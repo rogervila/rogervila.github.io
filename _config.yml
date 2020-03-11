@@ -1,5 +1,5 @@
 ---
-title: Laravel & Vue.js Developer - Roger Vilà
+title: DevOPS & Fullstack Developer - Roger Vilà
 timezone: Europe/Madrid
 collections:
   posts:
@@ -46,6 +46,8 @@ twitter:
   username: _rogervila
   card: summary
   hashtag: rogervila
+stackoverflow:
+  profile: https://stackoverflow.com/users/3333549/rogervila
 github:
   username: rogervila
 linkedin: https://es.linkedin.com/in/rogervilacamon

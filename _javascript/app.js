@@ -1,5 +1,5 @@
 const Navbar = require('./components/Navbar').default
-const LazyImages = require('./components/LazyImages').default
+// const LazyImages = require('./components/LazyImages').default
 const disqus = require('disqus-snippet')
 const chatra = require('./components/Chatra').default
 const commentBox = require('commentbox.io')
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Lazy load images
-    new LazyImages().load()
+    // new LazyImages().load()
 
     // Load chatra
     chatra()

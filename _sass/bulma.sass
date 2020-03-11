@@ -8,3 +8,10 @@
 @import "layout/_all"
 
 @import "custom/_all"
+
+// Destroy cloak
+[data-cloak]>*
+    visibility: visible
+
+[data-cloak]::before
+    content: ""

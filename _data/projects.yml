@@ -7,12 +7,12 @@
     - https://img.shields.io/github/stars/rogervila/array-diff-multidimensional.svg?style=social
 
 -
-  name: Provably Fair
-  description: PHP implementation of Bustabit's <br> Provably Fair system
-  url: https://github.com/rogervila/provably-fair
+  name: Laravel Email Failer
+  description: Assert what happens on your Laravel Application when an email fails to send
+  url: https://github.com/rogervila/laravel-email-failer
   images:
-    - https://poser.pugx.org/rogervila/provably-fair/downloads
-    - https://img.shields.io/github/stars/rogervila/provably-fair.svg?style=social
+    - https://poser.pugx.org/rogervila/laravel-email-failer/downloads
+    - https://img.shields.io/github/stars/rogervila/laravel-email-failer.svg?style=social
 
 -
   name: PHP SonarQube Scanner
@@ -21,3 +21,11 @@
   images:
     - https://poser.pugx.org/rogervila/php-sonarqube-scanner/downloads
     - https://img.shields.io/github/stars/rogervila/php-sonarqube-scanner.svg?style=social
+
+-
+  name: Provably Fair
+  description: PHP implementation of Bustabit's <br> Provably Fair system
+  url: https://github.com/rogervila/provably-fair
+  images:
+    - https://poser.pugx.org/rogervila/provably-fair/downloads
+    - https://img.shields.io/github/stars/rogervila/provably-fair.svg?style=social

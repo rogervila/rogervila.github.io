@@ -3,3 +3,4 @@ _site
 _javascript/node_modules
 _javascript/mix-manifest.json
 _javascript/package-lock.json
+_javascript/yarn.lock

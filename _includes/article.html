@@ -3,9 +3,9 @@
         <figure class="image is-4by3">
             <a href="{{ site.url }}/{{ post.url }}">
                 {% if site.cloudinary and post.cloudinary %}
-                <img class="lazy" src="{{ site.url }}/assets/svg/loading.svg" data-src="{{ site.cloudinary.base }}/f_auto,q_auto:best,w_432,h_324,c_fill,g_auto:subject,dpr_auto/{{ post.cloudinary }}" alt="{{ post.title }}">
+                <img loading="lazy" src="{{ site.cloudinary.base }}/f_auto,q_auto:best,w_432,h_324,c_fill,g_auto:subject,dpr_auto/{{ post.cloudinary }}" alt="{{ post.title }}">
                 {% else %}
-                <img class="lazy" src="{{ site.url }}/assets/svg/loading.svg" data-src="{{ post.image }}" alt="{{ post.title }}">
+                <img loading="lazy" src="{{ post.image }}" alt="{{ post.title }}">
                 {% endif %}
             </a>
         </figure>
