@@ -9,7 +9,7 @@
         <footer class="card-footer">
             {% for image in project.images %}
             <a target="_blank" rel="noopener noreferrer" href="{{ project.url }}" class="card-footer-item">
-                <img loading="lazy" src="{{ image }}" alt="{{ project.name }}">
+                <img class="lazy" data-src="{{ image }}" src="{{ site.url }}/assets/svg/loading.svg" alt="{{ project.name }}">
             </a>
             {% endfor %}
         </footer>
