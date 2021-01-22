@@ -1,11 +1,17 @@
+{% if post.full_url %}
+{% assign post_url = post.full_url %}
+{% else %}
+{% assign post_url = post.url | relative_url %}
+{% endif %}
+
 <article class="card">
-    <div class="card-image">
+     <div class="card-image">
         <figure class="image is-4by3">
-            <a href="{{ site.url }}/{{ post.url }}">
+            <a href="{{ post_url }}">
                 {% if site.cloudinary and post.cloudinary %}
                 <img loading="lazy" src="{{ site.cloudinary.base }}/f_auto,q_auto:best,w_432,h_324,c_fill,g_auto:subject,dpr_auto/{{ post.cloudinary }}" alt="{{ post.title }}">
                 {% else %}
-                <img loading="lazy" src="{{ post.image }}" alt="{{ post.title }}">
+                <img loading="lazy" src="{{ post.image }}?v={{ post.date | date: '%s%U' }}" alt="{{ post.title }}">
                 {% endif %}
             </a>
         </figure>
@@ -13,11 +19,10 @@
     <div class="card-content">
         <header>
             <h2 class="title is-4">
-                <a href="{{ site.url }}/{{ post.url }}">{{ post.title }}</a>
+                <a href="{{ post_url }}">{{ post.title }}</a>
             </h2>
         </header>
         <main class="content">
-            <!-- <p>{{ post.excerpt }}</p> -->
             <p><small><time datetime="{{ post.date | date_to_rfc822 }}"><br>{{ post.date | date_to_string }}</time></small></p>
         </main>
     </div>

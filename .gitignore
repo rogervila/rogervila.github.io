@@ -4,3 +4,4 @@ _javascript/node_modules
 _javascript/mix-manifest.json
 _javascript/package-lock.json
 _javascript/yarn.lock
+.DS_Store

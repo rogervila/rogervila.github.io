@@ -5,16 +5,11 @@
                 <div class="media">
                     <div class="media-left">
                         <figure class="image is-128x128">
-                            <img loading="lazy" width="128" height="128" class="is-rounded" src="{{ image }}" alt="{{ site.title }}">
+                            <img loading="lazy" width="128" height="128" class="is-rounded" src="{{ include.image }}" alt="{{ site.title }}">
                         </figure>
                     </div>
                     <div class="media-content has-text-centered-mobile">
-                        <h1 class="title">{{ site.data.content.home.header.hello }}</h1>
-                        <div class="content">
-                            <p>
-                                {{ site.data.content.home.header.whoami }}
-                            </p>
-                        </div>
+                        <div class="content">{{ include.content | markdownify }}</div>
                     </div>
                 </div>
             </div>
