@@ -9,22 +9,22 @@ collections:
     title: Uploads
     output: true
 defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: default
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      permalink: "/blog/:title"
-      is_post: true
-  - scope:
-      path: assets/**
-    values:
-      sitemap: false
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: default
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/blog/:title"
+    is_post: true
+- scope:
+    path: assets/**
+  values:
+    sitemap: false
 blog: https://rogervila.medium.com/
 repository: rogervila/rogervila.github.io
 instant_page: false
@@ -40,8 +40,7 @@ cookiebot:
   active: false
   id: 81f0d276-2838-45b4-88c7-634ca8b9a658
 lang: en
-description:
-  Roger Vilà is a developer specialized on web applications build on top
+description: Roger Vilà is a developer specialized on web applications build on top
   of laravel framework.
 url: https://rogervila.es
 author:
@@ -59,8 +58,8 @@ logo: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_112
 social:
   name: Roger Vilà
   links:
-    - https://github.com/rogervila
-    - https://twitter.com/_rogervila
+  - https://github.com/rogervila
+  - https://twitter.com/_rogervila
 webmaster_verifications:
   google: X3uvg5AB1-UMV9MBVlvSylNxOc93YJlO1Pq4uBb588A
   bing: B78749ACD39E931F3E7367CCB8D8430C
@@ -70,17 +69,17 @@ sass:
   sass_dir: _sass
   style: compressed
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENSE
-  - Dockerfile
-  - docker-compose.yml
-  - ".editorconfig"
-  - ".gitignore"
-  - ".dockerignore"
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENSE
+- Dockerfile
+- docker-compose.yml
+- ".editorconfig"
+- ".gitignore"
+- ".dockerignore"
 plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jekyll-github-metadata
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-gist
+- jekyll-github-metadata

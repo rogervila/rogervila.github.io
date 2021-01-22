@@ -1,6 +1,6 @@
 ---
-layout: home
 title: Home
+layout: home
 image: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_128,h_128,c_fill,g_face,dpr_auto,r_max/roger-vila-camon
 projects:
   title: Open Source
