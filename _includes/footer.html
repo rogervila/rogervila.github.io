@@ -2,11 +2,8 @@
     <div class="content has-text-centered">
         <p>&copy; <time>{{ 'now' | date: "%Y" }}</time> Roger Vilà</p>
         <p>
-            <a class="button is-rounded is-danger" href="https://ko-fi.com/rogervila">
-                <span class="icon mr-1">
-                    <img loading="lazy" width="20" height="12" src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Coffee cup">
-                </span>
-                Buy me a coffee!
+            <a aria-label="Buy me a coffee!" href="https://ko-fi.com/rogervila">
+                <img loading="lazy" width="150" src="{{ site.cloudinary.base }}/f_auto,w_150/buy-me-a-coffee" alt="Buy me a coffee!">
             </a>
         </p>
     </div>
