@@ -4,8 +4,9 @@ layout: default
 
 <header>
     {% assign image = page.image %}
+    {% assign image_srcset = page.image_srcset %}
     {% assign content = page.content %}
-    {% include me.html image=image content=content %}
+    {% include me.html image=image image_srcset=image_srcset content=content %}
 </header>
 <section class="section has-background-light">
     <div class="container">

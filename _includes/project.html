@@ -11,7 +11,10 @@
         <footer class="card-footer">
             {% for image in project.images %}
             <a href="{{ project.url }}" class="card-footer-item">
-                <img height="20" class="lazy" data-src="{{ image }}" src="{{ "/assets/svg/loading.svg" | relative_url }}" alt="{{ project.name }}">
+                {% comment %}
+                <img height="20" class="lazy" data-src="{{ image }}" src="{{ '/assets/svg/loading.svg' | relative_url }}" alt="{{ project.name }}">
+                {% endcomment %}
+                <img height="20" loading="lazy" src="{{ image }}" alt="{{ project.name }}">
             </a>
             {% endfor %}
         </footer>

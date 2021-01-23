@@ -3,15 +3,10 @@
         <div class="columns">
             <div class="column is-three-fifths is-offset-one-fifth">
                 <figure class="image is-128x128 mb-5">
-                    <img loading="lazy"
-                        width="128"
-                        height="128"
-                        class="is-rounded"
-                        src="{{ include.image }}"
-                        alt="{{ site.title }}">
+                    <img loading="lazy" width="128" height="128" class="is-rounded" src="{{ include.image }}" srcset="{{ include.image_srcset }}" alt="{{ site.title }}">
                 </figure>
                 <div class="content">{{ include.content | markdownify }}</div>
             </div>
         </div>
-     </div>
+    </div>
 </div>
