@@ -55,7 +55,8 @@ github:
   username: rogervila
 linkedin: https://es.linkedin.com/in/rogervilacamon
 logo: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_112,h_28,c_lpad,b_white,dpr_auto/logo_qqflde
-logo_srcset: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_224,h_56,c_lpad,b_white,dpr_auto/logo_qqflde 2x
+logo_srcset: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_224,h_56,c_lpad,b_white,dpr_auto/logo_qqflde
+  2x
 social:
   name: Roger Vilà
   links:
