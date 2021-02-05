@@ -15,9 +15,9 @@ articles:
 
 # 👋 Hi, I'm Roger
 
-I am a Full Stack developer, and I love Open Source and the value that it provides to the community.
+I am a Full Stack developer, specialized on PHP, JavaScript and Python development.
 
-You may find some thoughts I wrote about [the value that Open Source brings to my job as a developer](https://rogervila.medium.com/the-value-that-open-source-provides-to-my-job-298ea0a2d185).
+I work as a developer consultant, and I like to collaborate on Open Source projects.
 
 📦  These are some of the projects I have created:
 
@@ -27,7 +27,7 @@ You may find some thoughts I wrote about [the value that Open Source brings to m
 
 Check my [GitHub profile](https://github.com/rogervila) to see more repositories or drop me a message.
 
-<button class="button is-primary" onclick="Chatra('openChat', true)">Chat with me!</button>
+<button class="button is-primary" onclick="typeof Chatra !== 'undefined' && Chatra('openChat', true)">Chat with me!</button>
 
 🙌 Thank you!
 
