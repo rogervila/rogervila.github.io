@@ -1,4 +1,6 @@
-FROM ruby:2.6.1-alpine3.8
+FROM ruby:2.7.3-alpine AS builder
+
+LABEL github-pages-dependencies https://pages.github.com/versions/
 
 LABEL alpine-docs https://wiki.alpinelinux.org/wiki/How_to_get_regular_stuff_working
 
@@ -16,6 +18,13 @@ RUN \
 
 ADD . .
 
-EXPOSE 80
+RUN \
+    jekyll build
 
-CMD jekyll serve -d /_site --force_polling -H 0.0.0.0 -P 80
+
+
+FROM nginx:alpine
+
+COPY --from=builder /usr/src/app/_site /usr/share/nginx/html
+
+EXPOSE 80
