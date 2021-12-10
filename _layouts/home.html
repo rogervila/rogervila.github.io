@@ -8,11 +8,12 @@ layout: default
     {% assign content = page.content %}
     {% include me.html image=image image_srcset=image_srcset content=content %}
 </header>
+
 <section class="section has-background-light">
     <div class="container">
         <h2 class="title">{{ page.projects.title }}</h2>
         <div class="columns is-multiline">
-            {% for project in site.data.projects limit:3 %}
+            {% for project in site.data.projects limit:6 %}
             {% include project.html project=project %}
             {% endfor %}
         </div>

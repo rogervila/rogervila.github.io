@@ -1,3 +1,5 @@
+Dockerfile
+.dockerignore
 Gemfile.lock
 _site
-_javascript
+.DS_Store
