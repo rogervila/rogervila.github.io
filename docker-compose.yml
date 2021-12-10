@@ -1,9 +1,9 @@
-version: '3'
+version: "3.8"
+
 services:
   rogervila.es:
-    container_name: rogervila.es
     restart: always
     build:
       context: ./
     ports:
-      - '4000:80'
+      - "4000:80"
