@@ -1,4 +1,5 @@
 ---
+# baseurl: "" # DEV Environment only!
 title: DevOPS & Fullstack Developer - Roger Vilà
 timezone: Europe/Madrid
 collections:
@@ -9,22 +10,22 @@ collections:
     title: Uploads
     output: true
 defaults:
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: default
-- scope:
-    path: ''
-    type: posts
-  values:
-    layout: post
-    permalink: "/blog/:title"
-    is_post: true
-- scope:
-    path: assets/**
-  values:
-    sitemap: false
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: "/blog/:title"
+      is_post: true
+  - scope:
+      path: assets/**
+    values:
+      sitemap: false
 blog: https://rogervila.medium.com/
 repository: rogervila/rogervila.github.io
 instant_page: false
@@ -40,7 +41,8 @@ cookiebot:
   active: false
   id: 81f0d276-2838-45b4-88c7-634ca8b9a658
 lang: en
-description: Roger Vilà is a developer specialized on web applications build on top
+description:
+  Roger Vilà is a developer specialized on web applications build on top
   of laravel framework.
 url: https://rogervila.es
 author:
@@ -55,13 +57,14 @@ github:
   username: rogervila
 linkedin: https://es.linkedin.com/in/rogervilacamon
 logo: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_112,h_28,c_lpad,b_white,dpr_auto/logo_qqflde
-logo_srcset: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_224,h_56,c_lpad,b_white,dpr_auto/logo_qqflde
+logo_srcset:
+  https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_224,h_56,c_lpad,b_white,dpr_auto/logo_qqflde
   2x
 social:
   name: Roger Vilà
   links:
-  - https://github.com/rogervila
-  - https://twitter.com/_rogervila
+    - https://github.com/rogervila
+    - https://twitter.com/_rogervila
 webmaster_verifications:
   google: X3uvg5AB1-UMV9MBVlvSylNxOc93YJlO1Pq4uBb588A
   bing: B78749ACD39E931F3E7367CCB8D8430C
@@ -71,18 +74,18 @@ sass:
   sass_dir: _sass
   style: compressed
 exclude:
-- Gemfile
-- Gemfile.lock
-- README.md
-- LICENSE
-- Dockerfile
-- docker-compose.yml
-- ".editorconfig"
-- ".gitignore"
-- ".dockerignore"
-- _javascript/node_modules
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - Dockerfile
+  - docker-compose.yml
+  - ".editorconfig"
+  - ".gitignore"
+  - ".dockerignore"
+  - _javascript/node_modules
 plugins:
-- jekyll-sitemap
-- jekyll-seo-tag
-- jekyll-gist
-- jekyll-github-metadata
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-github-metadata
