@@ -5,11 +5,11 @@ image: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_12
 image_srcset: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_256,h_256,c_fill,g_face,dpr_auto,r_max/roger-vila-camon
   2x
 projects:
-  title: Open Source
+  title: 📦 Open Source
   call: View more projects &rarr;
   url: https://github.com/rogervila
 articles:
-  title: Posts
+  title: 📝 Posts
   call: Read more posts &rarr;
 ---
 
@@ -23,20 +23,8 @@ Previously, I worked as a freelancer on different start-ups placed in Barcelona,
 
 Competencies: PHP (I work with Laravel mainly), JS (Vue and React), Python, DevOPS tools (Docker + Swarm, Jenkins) and Databases (SQL, NoSQL and Graph, mainly Neo4J)
 
-
-📦  These are some of the projects I have created:
-
-- **[Array Diff Multidimensional](https://github.com/rogervila/array-diff-multidimensional)**: Compare the difference between two multidimensional arrays in PHP.
-- **[PHP SonarQube Scanner](https://github.com/rogervila/php-sonarqube-scanner)**: Run SonarQube Scanner with composer.
-- **[Laravel Email Failer](https://github.com/rogervila/laravel-email-failer)**: Trigger email failures to assert what happens on your Laravel Application when an email fails to send.
-
 Check my [GitHub profile](https://github.com/rogervila) to see more repositories or drop me a message.
 
 <button class="button is-primary" onclick="typeof Chatra !== 'undefined' && Chatra('openChat', true)">Chat with me!</button>
 
 🙌 Thank you!
-
-
-
-
-
