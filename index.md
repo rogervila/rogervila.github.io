@@ -5,11 +5,11 @@ image: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_12
 image_srcset: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_256,h_256,c_fill,g_face,dpr_auto,r_max/roger-vila-camon
   2x
 projects:
-  title: 📦 Open Source
+  title: "\U0001F4E6 Open Source"
   call: View more projects &rarr;
   url: https://github.com/rogervila
 articles:
-  title: 📝 Posts
+  title: "\U0001F4DD Posts"
   call: Read more posts &rarr;
 ---
 
