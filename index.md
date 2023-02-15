@@ -15,15 +15,15 @@ articles:
 
 # 👋 Hi, I'm Roger
 
-I have worked for almost 10 years as a software developer. Currently, I work as a Senior Software Analyst at K-LAGAN, where I lead a team of four developers, building strategic solutions that are helping business to achieve new goals from different technical perspectives (DevOps, Web, Big Data and RPA).
+As a Senior Backend Developer with over 10 years of experience, I have demonstrated expertise in building robust and scalable backend systems for a variety of web applications. My expertise lies in developing RESTful APIs, and database design, as well as integrating third-party services and libraries.
 
-I am deeply passionate about finding technical challenges that allows business to discover new value that helps to grow up.
+Throughout my career, I have gained experience in building high-performance applications with an emphasis on security and maintainability. I have experience with software development methodologies like Agile and have worked extensively in a collaborative team environment.
 
-Previously, I worked as a freelancer on different start-ups placed in Barcelona, developing specific projects, mostly web based, for third-party companies like Coca-cola, HP and GFT among others.
+My technical skill set includes proficiency in PHP frameworks such as Laravel and Symfony, as well as experience with relational databases like MySQL, and Postgres. Additionally, I have experience with Docker and JavaScript libraries like React, and Vue.
 
-Competencies: PHP (I work with Laravel mainly), JS (Vue and React), Python, DevOPS tools (Docker + Swarm, Jenkins) and Databases (SQL, NoSQL and Graph, mainly Neo4J)
+As a proactive problem-solver with excellent communication skills, I am committed to delivering high-quality work and ensuring project success. I thrive in dynamic and fast-paced environments and am passionate about staying up-to-date with emerging technologies and industry trends.
 
-Check my [GitHub profile](https://github.com/rogervila) to see more repositories or drop me a message.
+Check my [GitHub profile](https://github.com/rogervila) or drop me a message.
 
 <button class="button is-primary" onclick="typeof Chatra !== 'undefined' && Chatra('openChat', true)">Chat with me!</button>
 
