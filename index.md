@@ -25,6 +25,6 @@ As a proactive problem-solver with excellent communication skills, I am committe
 
 Check my [GitHub profile](https://github.com/rogervila) or drop me a message.
 
-<button class="button is-primary" onclick="typeof Chatra !== 'undefined' && Chatra('openChat', true)">Chat with me!</button>
+<a href="{{ '/resume.pdf' | relative_url }}" class="button is-primary">Check my resume</a>
 
 🙌 Thank you!
