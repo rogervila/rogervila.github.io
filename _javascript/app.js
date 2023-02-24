@@ -1,7 +1,7 @@
 const Navbar = require('./components/Navbar').default
 //const LazyImages = require('./components/LazyImages').default
 //const disqus = require('disqus-snippet')
-const chatra = require('./components/Chatra').default
+// const chatra = require('./components/Chatra').default
 //const commentBox = require('commentbox.io')
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // new LazyImages().load()
 
     // Load chatra
-    chatra()
+    // chatra()
 })
 
 function styleLoader() {
