@@ -1,5 +1,5 @@
 ---
-title: DevOPS & Fullstack Developer - Roger Vilà
+title: Senior Backend Developer - Roger Vilà
 timezone: Europe/Madrid
 collections:
   posts:
@@ -30,12 +30,12 @@ repository: rogervila/rogervila.github.io
 instant_page: false
 cloudinary:
   base: https://res.cloudinary.com/rogervila/image/upload/
-chatra:
-  id: DMxNajG68hYYtyPsd
-commentbox_io:
-  id: 5674748138749952-proj
-google_analytics:
-  id: UA-55617377-1
+#chatra:
+#  id: DMxNajG68hYYtyPsd
+#commentbox_io:
+#  id: 5674748138749952-proj
+#google_analytics:
+#  id: UA-55617377-1
 cookiebot:
   active: false
   id: 81f0d276-2838-45b4-88c7-634ca8b9a658

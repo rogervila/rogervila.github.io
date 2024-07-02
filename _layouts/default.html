@@ -23,14 +23,6 @@ layout: compress
 
     <link rel="preconnect" href="https://res.cloudinary.com">
 
-    {% if page.is_post %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://storage.googleapis.com">
-    {% else %}
-    <link rel="preconnect" href="https://poser.pugx.org">
-    <link rel="preconnect" href="https://img.shields.io">
-    {% endif %}
-
     {% if site.google_analytics %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics.id }}"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', '{{ site.google_analytics.id }}');</script>
@@ -38,18 +30,19 @@ layout: compress
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        [data-cloak]>* {
-            visibility: hidden;
-        }
 
-        [data-cloak]::before {
-            content: "loading…";
-        }
-    </style>
-    <noscript>
-        <link rel="stylesheet" type="text/css" href="{{ '/assets/css/app.css?v=' | append: cached_version | relative_url }}">
-    </noscript>
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css?v=' | append: cached_version | relative_url }}"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="{{ '/assets/css/owl.carousel.css?v=' | append: cached_version | relative_url }}"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="{{ '/assets/css/owl.theme.css?v=' | append: cached_version | relative_url }}"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css?v=' | append: cached_version | relative_url }}"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="{{ '/assets/css/magnific-popup.css?v=' | append: cached_version | relative_url }}"
+        type="text/css" media="all">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: cached_version | relative_url }}"
+        type="text/css" media="all">
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
@@ -62,21 +55,28 @@ layout: compress
     {% seo %}
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="628">
-
-    {% if site.chatra %}
-    <meta name="chatra" content="{{ site.chatra.id }}">
-    {% endif %}
-
-    {% if site.commentbox_io %}
-    <meta name="commentbox_io" content="{{ site.commentbox_io.id }}">
-    {% endif %}
 </head>
 
-<body data-cloak>
-    {% include navbar.html %}
-    {{ content }}
-    {% include footer.html %}
-    {% include scripts.html %}
+<body>
+    {% include preloader.html %}
+
+    <main class="wrapper">
+        {{ content }}
+    </main>
+
+    <script defer src="{{ '/assets/js/jquery-1.12.3.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer
+        src="{{ '/assets/js/jquery.onepage-scroll.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/jquery.easing.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer
+        src="{{ '/assets/js/jquery.backstretch.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/jquery.filterizr.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer
+        src="{{ '/assets/js/jquery.magnific-popup.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/bootstrap.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/owl.carousel.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/custom.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/smoothscroll.min.js?v=' | append: cached_version | relative_url }}"></script>
 </body>
 
 </html>

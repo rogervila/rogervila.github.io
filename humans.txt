@@ -1,5 +1,5 @@
 ---
-layout: 
+layout:
 ---
 
 # humanstxt.org/
@@ -10,7 +10,7 @@ layout:
 
 # TECHNOLOGY COLOPHON
 
-    BULMA, JEKYLL
+    JEKYLL
 
 # SITE
 
