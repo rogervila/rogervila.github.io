@@ -1,0 +1,26 @@
+<section id="education" class="resume">
+
+    <div class="section-header">
+        <h2>Education</h2>
+
+    </div>
+
+    <div class="row">
+        {% for education in site.data.education %}
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="{% if forloop.index == 1 %}top-item {% endif %}resume-item">
+                <h2>{{ education.title }}</h2>
+                <span>
+                    <time datetime="{{ education.start_date }}">{{ education.start_date | date: "%B %d, %Y" }}</time>
+                    -
+                    <time datetime="{{ education.end_date }}">{{ education.end_date | date: "%B %d, %Y" }}</time>
+                </span>
+                <p>{{ education.school }} | {{ education.location }}</p>
+            </div>
+        </div>
+        {% endfor %}
+
+        <!-- Page 1 End -->
+    </div>
+
+</section>

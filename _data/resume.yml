@@ -1,0 +1,92 @@
+- title: Tech Lead
+  company: Wivapp.com
+  location: Barcelona
+  start_date: 2024-02-19
+  end_date: null
+  goals:
+    - Develop and maintain a scalable MVP solution for restaurants.
+- title: Senior Backend Developer
+  company: Convelio
+  location: Paris, France
+  start_date: 2022-05-01
+  end_date: 2024-02-19
+  goals:
+    - Develop and maintain scalable and secure PHP-based APIs.
+    - Collaborate with frontend developers to design and implement our API.
+    - Optimize API performance and ensure uptime. 99% SLA guaranteed.
+    - Continuously improve the quality and maintainability of the codebase, including following best practices for code quality and testing.
+    - Refactor legacy code to increase security and performance. Deleted more than 10k LOC
+- title: Senior Programming Analyst
+  company: K-LAGAN
+  location: Barcelona
+  start_date: 2017-08-17
+  end_date: 2022-05-01
+  goals:
+    - Leverage different project functionalities across shared micro-services based on Docker. with more than 10 services implemented.
+    - Use Laravel for API integrations and background tasks, and Python for data processing and RPA tools.
+    - Tech lead across remote teams from different world locations, including Asia and Europe.
+    - Ensure code quality and functionality integration. by reaching 80% coverage on SonarQube.
+- title: Full Stack Developer
+  company: HEALTH DATALINE EUROPE SA
+  location: Barcelona
+  start_date: 2017-03-01
+  end_date: 2017-08-17
+  goals:
+    - Adapt eCommerce websites creating new front-end versions for specific devices with Onsen UI. More than 10 client websites migrated.
+    - Create internal APIs to retrieve data from different data sources on the backend.
+    - Maintain and apply SEO to toopharm.com and healthdataline.com websites, increasing by 1% of new visits every month
+- title: CEO & Co-Founder
+  company: SeeDoCare S.L.
+  location: Barcelona
+  start_date: 2015-10-08
+  end_date: 2017-03-01
+  goals:
+    - Develop web applications tailored to our client's needs. 3 clients in the first year.
+    - Implement custom eCommerce, SaaS, and CMS solutions. 20% cost reduction compared to other B2B platforms.
+    - Integrate additional services like SEO, Brand design, and Marketing solutions.
+    - In 2017, the lack of big clients plus the job offer we found on the market made us take the decision to close the business and work full-time for other companies, which resulted in fewer work hours and more salary
+- title: Software Developer
+  company: Emotion Experience
+  location: Barcelona
+  start_date: 2016-11-01
+  end_date: 2017-02-01
+  goals:
+    - Develop 1 interactive space where the public can interact with the GFT brand directly.
+    - Create 1 specific software for each action, working with LED displays and interactive panels.
+    - Develop software for a specific setup for GFT called <a rel="noopener noreferrer" target="_blank" href="https://www.lightsoundgroup.com/portfolio/gft-lab/">"GFT Lab"</a>.
+- title: Web Developer
+  company: ( caravelo (
+  location: Barcelona
+  start_date: 2015-11-01
+  end_date: 2016-11-01
+  goals:
+    - Develop a product for Volaris Airline company called "Volado Volaris", which offered cheap trips with few hours in advance for planes with empty seats. First released after 1 month.
+    - Maintain product websites for Airline companies.
+    - Implement a design system to easily integrate new Airline companies into our products. 2 new airlines used it.
+- title: Web Developer
+  company: SIQUR S.P.A.
+  location: Italy
+  start_date: 2015-04-17
+  end_date: 2015-11-01
+  goals:
+    - Develop the Spanish version of the eCommerce website. 1-10 monthly products sold in the first year.
+    - Develop a WordPress blog as part of the marketing strategy. 1-2 posts every month by external collaborators.
+    - I also managed video editing, blog writing, SEO, analytics, and marketing campaigns.
+- title: Web Developer Instructor
+  company: Centro Informática Profesional CIPSA
+  location: Italy
+  start_date: 2014-10-08
+  end_date: 2015-04-17
+  goals:
+    - Hired as an instructor after finishing the Full Stack Web Design and Programming Master. More than 50 students in 1 year.
+    - Guide my students to grow up as developers, starting with a very simple HTML landing page and finishing the course with a big full-stack project.
+    - More than 50% of students found a job after finishing the course.
+- title: Web Developer
+  company: Mediterrani Food
+  location: Barcelona
+  start_date: 2013-05-01
+  end_date: 2014-06-21
+  goals:
+    - Develop and maintain 1 WordPress site.
+    - Blog writing, video editing, Community management, and SEO. More than 10 new clients thanks to that content.
+    - Apply the brand design to the website, reports, and communications.

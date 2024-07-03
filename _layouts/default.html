@@ -8,20 +8,20 @@ layout: compress
 
 <head>
     {% if site.instant_page %}
-    <link rel="preconnect" href="https://instant.page">
+    <link rel="preconnect" href="https://instant.page" crossorigin />
     {% endif %}
 
     {% if site.google_analytics %}
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
     {% endif %}
 
     {% if site.cookiebot.active %}
-    <link rel="preconnect" href="https://consentcdn.cookiebot.com">
-    <link rel="preconnect" href="https://consent.cookiebot.com">
+    <link rel="preconnect" href="https://consentcdn.cookiebot.com" crossorigin />
+    <link rel="preconnect" href="https://consent.cookiebot.com" crossorigin />
     {% endif %}
 
-    <link rel="preconnect" href="https://res.cloudinary.com">
+    <link rel="preconnect" href="https://res.cloudinary.com" crossorigin />
 
     {% if site.google_analytics %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics.id }}"></script>
@@ -31,6 +31,9 @@ layout: compress
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
+    <link href="https://fonts.bunny.net/css?family=Poppins:400,700" rel="stylesheet" />
+
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css?v=' | append: cached_version | relative_url }}"
         type="text/css" media="all">
     <link rel="stylesheet" href="{{ '/assets/css/owl.carousel.css?v=' | append: cached_version | relative_url }}"
@@ -39,9 +42,9 @@ layout: compress
         type="text/css" media="all">
     <link rel="stylesheet" href="{{ '/assets/css/font-awesome.min.css?v=' | append: cached_version | relative_url }}"
         type="text/css" media="all">
-    <link rel="stylesheet" href="{{ '/assets/css/magnific-popup.css?v=' | append: cached_version | relative_url }}"
-        type="text/css" media="all">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: cached_version | relative_url }}"
+    <!--<link rel="stylesheet" href="{{ '/assets/css/magnific-popup.css?v=' | append: cached_version | relative_url }}"
+        type="text/css" media="all">-->
+    <link rel="stylesheet" href="{{ '/assets/css/style.min.css?v=' | append: cached_version | relative_url }}"
         type="text/css" media="all">
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
@@ -64,19 +67,15 @@ layout: compress
         {{ content }}
     </main>
 
-    <script defer src="{{ '/assets/js/jquery-1.12.3.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script defer
-        src="{{ '/assets/js/jquery.onepage-scroll.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script defer src="{{ '/assets/js/jquery.easing.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script defer
-        src="{{ '/assets/js/jquery.backstretch.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script defer src="{{ '/assets/js/jquery.filterizr.js?v=' | append: cached_version | relative_url }}"></script>
-    <script defer
-        src="{{ '/assets/js/jquery.magnific-popup.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script defer src="{{ '/assets/js/bootstrap.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script defer src="{{ '/assets/js/owl.carousel.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script defer src="{{ '/assets/js/custom.js?v=' | append: cached_version | relative_url }}"></script>
-    <script defer src="{{ '/assets/js/smoothscroll.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script src="{{ '/assets/js/jquery.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script src="{{ '/assets/js/jquery.onepage-scroll.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script src="{{ '/assets/js/jquery.easing.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script src="{{ '/assets/js/jquery.backstretch.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script src="{{ '/assets/js/jquery.filterizr.js?v=' | append: cached_version | relative_url }}"></script>
+    <script src="{{ '/assets/js/bootstrap.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script src="{{ '/assets/js/owl.carousel.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script src="{{ '/assets/js/custom.js?v=' | append: cached_version | relative_url }}"></script>
+    <script src="{{ '/assets/js/smoothscroll.min.js?v=' | append: cached_version | relative_url }}"></script>
 </body>
 
 </html>

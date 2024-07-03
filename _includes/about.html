@@ -2,23 +2,28 @@
 
     <div class="section-header">
         <h2>About Me</h2>
-        <a href="#" class="resume-download" data-toggle="tooltip" data-placement="bottom" title="Download">
-            <i class="fa fa-download" aria-hidden="true"> </i> Download Resume
+
+        <a href="mailto:{{ site.data.about.email }}" class="resume-download">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            Write me an email
         </a>
     </div>
 
     <!-- Intro -->
     <div class="intro">
 
-        <p>Hello, My name is John Doe. Lorem ipsum dolor sit amet, usu sumo dicant vulputate in. Quando fabellas
-            adipiscing nam an. An vis congue oporteat, no eros facer suavitate eos. An debet affert aliquid ius. Veritus
-            placerat est ea, est ne nominavi suscipit maluisset.</p>
+        {{ site.data.about.description }}
 
         <ul class="info">
-            <li><strong>Birthday:</strong> August 14, 1982</li>
-            <li><strong>Location:</strong> Central Main Rd, Australia</li>
-            <li><strong>Email:</strong> contact@yourmail.com</li>
-            <li><strong>Phone:</strong> +111 1234-1234</li>
+            <li><strong>Birthday:</strong>&nbsp;<time datetime="{{ site.data.about.birthday }}">{{
+                    site.data.about.birthday | date: "%B %d, %Y"
+                    }}</time></li>
+            <li><strong>Location:</strong>&nbsp;{{ site.data.about.location }}</li>
+            <li><strong>Email:</strong>&nbsp;<a href="mailto:{{ site.data.about.email }}">{{ site.data.about.email
+                    }}</a></li>
+            <li><strong>Phone:</strong>&nbsp;<a href='tel:{{ site.data.about.phone | remove: " " }}'>{{
+                    site.data.about.phone }}</a>
+            </li>
         </ul>
 
 
@@ -31,53 +36,20 @@
 
         <div class="row">
 
+            {% for skill in site.data.skills limit:6 %}
             <div class="col-md-6 col-sm-6 col-xs-12 item">
                 <div class="skill-info clearfix">
-                    <h3 class="pull-left">Photoshop</h3>
-                    <span class="pull-right">90%</span>
+                    <h3 class="pull-left">{{ skill.name }}</h3>
+                    <span class="pull-right">{{ skill.percentage }}%</span>
                 </div>
                 <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                        aria-valuemax="100" style="width:90%">
+                    <div class="progress-bar" role="progressbar" aria-label="{{ skill.name }}"
+                        aria-valuenow="{{ skill.percentage }}" aria-valuemin="0" aria-valuemax="100"
+                        style="width:{{ skill.percentage }}%">
                     </div>
                 </div>
             </div>
-
-            <div class="col-md-6 col-sm-6 col-xs-12 item">
-                <div class="skill-info clearfix">
-                    <h3 class="pull-left">Illustrator</h3>
-                    <span class="pull-right">80%</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                        aria-valuemax="100" style="width:80%">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-sm-6 col-xs-12 item">
-                <div class="skill-info clearfix">
-                    <h3 class="pull-left">Indesign</h3>
-                    <span class="pull-right">45%</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0"
-                        aria-valuemax="100" style="width:45%">
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 col-sm-6 col-xs-12 item">
-                <div class="skill-info clearfix">
-                    <h3 class="pull-left">Corel Draw</h3>
-                    <span class="pull-right">60%</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-                        aria-valuemax="100" style="width:60%">
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
 
         </div>
 

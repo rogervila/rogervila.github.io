@@ -9,24 +9,43 @@
     <!-- Mobile menu end -->
 
     <div class="avatar">
-        <img loading="lazy"
-            src="https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_1102,h_1102,c_fill,g_face,dpr_auto,r_max/roger-vila-camon"
-            alt="Roger Vilà">
+        <img height="165" width="165" loading="lazy" src="{{ site.data.about.image }}" alt="{{ site.data.about.name }}">
     </div>
 
     <div class="name">
-        <h1>John Doe</h1>
-        <span>UX/UI Designer</span>
+        <h1>{{ site.data.about.name }}</h1>
+        <span>{{ site.data.about.role }}</span>
     </div>
 
     <!-- Social Icons -->
     <div class="social-icons">
         <ul>
-            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-            <li><a href="#"><i class="fa fa-flickr" aria-hidden="true"></i></a></li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="{{ site.data.about.github }}" aria-label="Github">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="{{ site.data.about.stack-overflow }}"
+                    aria-label="StackOverflow">
+                    <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="{{ site.data.linkedin }}" aria-label="Linkedin">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:{{ site.data.about.email }}" aria-label="Email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href='tel:{{ site.data.about.phone | remove: " " }}' aria-label="Phone">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </a>
+            </li>
         </ul>
     </div>
     <!-- Social Icons end -->
@@ -36,18 +55,18 @@
         <ul class="navigation">
 
             <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Expereince</a></li>
+            <li><a href="#experience">Resume</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#works">Works</a></li>
+            <li><a href="#works">Projects</a></li>
 
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="mailto:{{ site.data.about.email }}">Contact</a></li>
         </ul>
     </nav>
     <!-- Navigation bar end -->
 
     <!-- Footer Copyright -->
     <div class="copyright">
-        <span>&copy; <time>{{ 'now' | date: "%Y" }}</time> Roger Vilà</span>
+        <span>&copy; <time>{{ 'now' | date: "%Y" }}</time> {{ site.data.about.name }}</span>
     </div>
     <!-- Footer Copyright end -->
 
