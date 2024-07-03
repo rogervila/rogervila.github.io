@@ -1,7 +1,4 @@
-<p align="center"><img width="250" src="https://i.imgur.com/Tuo5DiZ.png" alt="Run SonarQube Scanner with composer" /></p>
+<p align="center"><img width="250" src="https://i.imgur.com/Tuo5DiZ.png" alt="rogervila.es" /></p>
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/R5R03E5ZI)
-
-# Roger Vilà's Jekyll Portfolio Template
-
-Fork it, change the `_config.yml` settings and use it as your portfolio website
+[![Website](https://img.shields.io/badge/website-rogervila.es-blue)](https://rogervila.es)
+[![Original template](https://img.shields.io/badge/template-designstub.com-blue)](https://www.designstub.com/demos/onepageresume)

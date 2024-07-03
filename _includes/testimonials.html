@@ -1,0 +1,32 @@
+<section id="testimonials" class="testimonials">
+
+    <div class="section-header">
+        <h2>Testimonials</h2>
+    </div>
+
+    <!-- Carousel -->
+    <div class="testimonial-carousel">
+
+        {% for testimonial in site.data.testimonials %}
+        <div class="item">
+            <div class="row">
+                <div class="col-md-2 col-sm-2 hidden-xs">
+                    <div class="thumb">
+                        <a href="{{ testimonial.url }}" rel="noopener noreferrer" target="_blank">
+                            <img loading="lazy"
+                                src="https://ui-avatars.com/api/?name={{ testimonial.name }}&color=16B4C7&background=FAFAFA"
+                                alt="{{ testimonial.name }}">
+                        </a>
+                    </div>
+                </div>
+                <div class="text col-md-10 col-sm-10 col-xs-12">
+                    <p>{{ testimonial.content }}</p>
+                    <span class="author">- {{ testimonial.name }}, {{ testimonial.role }} -</span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <!-- Carousel end -->
+
+</section>

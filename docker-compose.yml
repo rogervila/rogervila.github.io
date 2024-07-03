@@ -1,9 +1,0 @@
-version: "3.8"
-
-services:
-  rogervila.es:
-    restart: always
-    build:
-      context: ./
-    ports:
-      - "4000:80"

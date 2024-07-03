@@ -1,0 +1,73 @@
+<header class="header pull-left">
+
+    <!-- Mobile menu -->
+    <div class="mobile-bar visible-sm visible-xs">
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+        </div>
+    </div>
+    <!-- Mobile menu end -->
+
+    <div class="avatar">
+        <img height="165" width="165" loading="lazy" src="{{ site.data.about.image }}" alt="{{ site.data.about.name }}">
+    </div>
+
+    <div class="name">
+        <h1>{{ site.data.about.name }}</h1>
+        <span>{{ site.data.about.role }}</span>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+        <ul>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="{{ site.data.about.github }}" aria-label="Github">
+                    <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="{{ site.data.about.stack-overflow }}"
+                    aria-label="StackOverflow">
+                    <i class="fa fa-stack-overflow" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener noreferrer" href="{{ site.data.linkedin }}" aria-label="Linkedin">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:{{ site.data.about.email }}" aria-label="Email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a href='tel:{{ site.data.about.phone | remove: " " }}' aria-label="Phone">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- Social Icons end -->
+
+    <!-- Navigation bar -->
+    <nav class="main-nav">
+        <ul class="navigation">
+
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Resume</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#works">Projects</a></li>
+
+            <li><a href="mailto:{{ site.data.about.email }}">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Navigation bar end -->
+
+    <!-- Footer Copyright -->
+    <div class="copyright">
+        <span>&copy; <time>{{ 'now' | date: "%Y" }}</time> {{ site.data.about.name }}</span>
+    </div>
+    <!-- Footer Copyright end -->
+
+</header>

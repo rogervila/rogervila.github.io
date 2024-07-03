@@ -1,0 +1,59 @@
+{% assign all_categories = '' | split: ',' %}
+
+{% for project in site.data.projects %}
+{% assign all_categories = all_categories | push: project.category %}
+{% endfor %}
+
+{% assign categories = all_categories | uniq %}
+
+<section id="works" class="works clearfix">
+
+    <div class="section-header">
+        <h2>Portfolio</h2>
+    </div>
+
+    <!-- Control -->
+    <div class="control">
+        <ul>
+            <li class="active"><span class="filter" data-filter="all">All Projects</span></li>
+            {% for category in categories %}
+            <li><span class="filter" data-filter="{{ category }}">
+                    {% case category %}
+                    {% when 1, "1" %}
+                    PHP
+                    {% when 2, "2" %}
+                    Python
+                    {% else %}
+                    {{ category }}
+                    {% endcase %}
+                </span></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Items Outer -->
+    <div class="item-outer row clearfix">
+        {% for project in site.data.projects %}
+        <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="{{ project.category }}" data-sort="value">
+            <div class="item">
+                <span class="work-image">
+                    <div class="title">
+                        <div class="inner">
+                            <h2><a style="color:white" rel="noopener noreferrer" target="_blank"
+                                    href="{{ project.url }}">{{ project.name }}</a></h2>
+                            {% for badge in project.badges %}
+                            <img style="display: block; margin: 10px auto;" loading="lazy" src="{{ badge }}"
+                                alt="badge">
+                            {% endfor %}
+                        </div>
+                    </div>
+                </span>
+                <div class="overlay"></div>
+                <img loading="lazy" src="{{ project.image }}" alt="{{ project.name }}">
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+
+</section>

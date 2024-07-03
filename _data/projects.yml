@@ -1,41 +1,53 @@
 - name: Array Diff Multidimensional
+  category: 1
   description: Compare the difference between <br> two multidimensional arrays
   url: https://github.com/rogervila/array-diff-multidimensional
-  images:
+  image: https://banners.beyondco.de/Array%20Diff%20Multidimensional.png?theme=light&packageManager=composer+require&packageName=rogervila%2Farray-diff-multidimensional&pattern=architect&style=style_1&description=Works+like+the+PHP+array_diff%28%29+function%2C+but+with+multidimensional+arrays.&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Fwww.php.net%2Fimages%2Flogos%2Fnew-php-logo.svg
+  badges:
     - https://poser.pugx.org/rogervila/array-diff-multidimensional/downloads
     - https://img.shields.io/github/stars/rogervila/array-diff-multidimensional.svg?style=social
 
 - name: Laravel Email Failer
+  category: 1
   description: Assert what happens on your Laravel Application when an email fails to send
   url: https://github.com/rogervila/laravel-email-failer
-  images:
+  image: https://madewithnetworkfra.fra1.digitaloceanspaces.com/spatie-space-production/13020/laravel-email-failures.jpg
+  badges:
     - https://poser.pugx.org/rogervila/laravel-email-failer/downloads
     - https://img.shields.io/github/stars/rogervila/laravel-email-failer.svg?style=social
 
 - name: PHP SonarQube Scanner
+  category: 1
   description: Run SonarQube Scanner with composer by just running <code>vendor/bin/sonar-scanner</code>
   url: https://github.com/rogervila/php-sonarqube-scanner
-  images:
+  image: https://i.imgur.com/xcIhGwP.png
+  badges:
     - https://poser.pugx.org/rogervila/php-sonarqube-scanner/downloads
     - https://img.shields.io/github/stars/rogervila/php-sonarqube-scanner.svg?style=social
 
 - name: Provably Fair
+  category: 1
   description: PHP implementation of Bustabit's <br> Provably Fair system
   url: https://github.com/rogervila/provably-fair
-  images:
+  image: https://i.imgur.com/Z0QCVwf.jpg
+  badges:
     - https://poser.pugx.org/rogervila/provably-fair/downloads
     - https://img.shields.io/github/stars/rogervila/provably-fair.svg?style=social
 
 - name: Python Simple Rules Engine
+  category: 2
   description: Simple rules engine <br> written in Python
   url: https://github.com/rogervila/python_simple_rules_engine
-  images:
+  image: https://rogervila.es/static/img/python_simple_rules_engine.png
+  badges:
     - https://img.shields.io/github/issues/rogervila/python_simple_rules_engine
     - https://img.shields.io/github/stars/rogervila/python_simple_rules_engine.svg?style=social
 
 - name: Python DTO
+  category: 2
   description: Data Transfer Objects (DTO) <br> for Python
   url: https://github.com/rogervila/py_dto
-  images:
+  image: https://rogervila.es/static/img/py_dto.png
+  badges:
     - https://img.shields.io/github/issues/rogervila/py_dto
     - https://img.shields.io/github/stars/rogervila/py_dto.svg?style=social

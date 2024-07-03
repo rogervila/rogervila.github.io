@@ -1,0 +1,42 @@
+<section id="experience" class="resume">
+
+    <div class="section-header">
+        <h2>Resume</h2>
+
+    </div>
+
+    <div class="row">
+
+        {% for job in site.data.resume %}
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="{% if forloop.index == 1 %}top-item {% endif %}resume-item">
+                <h2>{{ job.title }} | {{ job.company }}</h2>
+                <span>
+                    <time datetime="{{ job.start_date }}">{{ job.start_date | date: "%B %d, %Y" }}</time>
+                    -
+                    {% if forloop.index == 1 %}
+                    Present
+                    {% else %}
+                    <time datetime="{{ job.end_date }}">
+                        {{ job.end_date | date: "%B %d, %Y" }}
+                    </time>
+                    {% endif %}
+                    |
+                    {{ job.location }}
+                </span>
+                <ul>
+                    {% for goal in job.goals %}
+                    <li>{{ goal }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endfor %}
+
+        <!-- Page 1 End -->
+
+
+
+    </div>
+
+</section>
