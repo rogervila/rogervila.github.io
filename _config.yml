@@ -30,17 +30,9 @@ repository: rogervila/rogervila.github.io
 instant_page: false
 cloudinary:
   base: https://res.cloudinary.com/rogervila/image/upload/
-#chatra:
-#  id: DMxNajG68hYYtyPsd
-#commentbox_io:
-#  id: 5674748138749952-proj
-#google_analytics:
-#  id: UA-55617377-1
-# cookiebot:
-#   active: false
-#   id: 81f0d276-2838-45b4-88c7-634ca8b9a658
 lang: en
-description: Roger Vilà is a Experienced Senior Backend Developer with 10+ years expertise in building backend systems with Laravel, Symfony, PHP, Javascript and Python
+description: Roger Vilà is a Experienced Senior Backend Developer with 10+ years expertise
+  in building backend systems with Laravel, Symfony, PHP, Javascript and Python
 url: https://rogervila.es
 author:
   twitter: _rogervila
