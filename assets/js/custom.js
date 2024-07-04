@@ -67,8 +67,16 @@ $(function () {
   /*=========================================================================
           Welcome & Header Height
   =========================================================================*/
-  $("#welcome").css({ 'height': ($(window).height()) + 'px' });
-  $(".header").css({ 'height': ($(window).height()) + 'px' });
+  function setHeaderAndWindowSize() {
+    $("#welcome").css({ 'height': (visualViewport.height) + 'px' });
+    $(".header").css({ 'height': (visualViewport.height) + 'px' });
+  }
+
+  setHeaderAndWindowSize()
+
+  $(window).on('resize scroll', function () {
+    setHeaderAndWindowSize()
+  })
 
   /*=========================================================================
           Magnific Popup Functions

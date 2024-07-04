@@ -24,6 +24,17 @@ Description: CV, Resume, vCard HTML Template
 /*-----------------------------------------------------------------*/
 /*                      GLOBAL STYLES                              */
 /*-----------------------------------------------------------------*/
+
+/*
+html,
+body {
+    -webkit-tap-highlight-color: transparent !important;
+    -webkit-overflow-scrolling: touch !important;
+    height: 100% !important;
+    overflow-y: scroll !important;
+}
+*/
+
 body {
     color: #1a1a1a;
     background-color: #fafafa;
