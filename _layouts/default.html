@@ -32,7 +32,6 @@ layout: compress
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="preconnect" href="https://fonts.bunny.net" crossorigin />
-    <link href="https://fonts.bunny.net/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css?v=' | append: cached_version | relative_url }}"
         type="text/css" media="all">
@@ -65,13 +64,14 @@ layout: compress
         {{ content }}
     </main>
 
-    <script src="{{ '/assets/js/jquery.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script src="{{ '/assets/js/jquery.onepage-scroll.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script src="{{ '/assets/js/jquery.easing.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script src="{{ '/assets/js/jquery.filterizr.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script src="{{ '/assets/js/bootstrap.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script src="{{ '/assets/js/owl.carousel.min.js?v=' | append: cached_version | relative_url }}"></script>
-    <script src="{{ '/assets/js/custom.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/jquery.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer
+        src="{{ '/assets/js/jquery.onepage-scroll.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/jquery.easing.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/jquery.filterizr.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/bootstrap.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/owl.carousel.min.js?v=' | append: cached_version | relative_url }}"></script>
+    <script defer src="{{ '/assets/js/custom.js?v=' | append: cached_version | relative_url }}"></script>
 </body>
 
 </html>

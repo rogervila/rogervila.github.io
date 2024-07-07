@@ -1,3 +1,11 @@
+// Font
+document.addEventListener('DOMContentLoaded', function () {
+  var fontLink = document.createElement('link');
+  fontLink.rel = 'stylesheet';
+  fontLink.href = 'https://fonts.bunny.net/css?family=Poppins:400,700&display=swap';
+  document.head.appendChild(fontLink);
+});
+
 // Preloader
 $(window).load(function () {
   "use strict";
