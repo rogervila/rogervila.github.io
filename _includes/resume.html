@@ -12,13 +12,13 @@
             <div class="{% if forloop.index == 1 %}top-item {% endif %}resume-item">
                 <h2>{{ job.title }} | {{ job.company }}</h2>
                 <span>
-                    <time datetime="{{ job.start_date }}">{{ job.start_date | date: "%B %d, %Y" }}</time>
+                    <time datetime="{{ job.start_date }}">{{ job.start_date | date: "%B %Y" }}</time>
                     -
                     {% if forloop.index == 1 %}
                     Present
                     {% else %}
                     <time datetime="{{ job.end_date }}">
-                        {{ job.end_date | date: "%B %d, %Y" }}
+                        {{ job.end_date | date: "%B %Y" }}
                     </time>
                     {% endif %}
                     |

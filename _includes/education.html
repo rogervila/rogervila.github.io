@@ -11,9 +11,9 @@
             <div class="{% if forloop.index == 1 %}top-item {% endif %}resume-item">
                 <h2>{{ education.title }}</h2>
                 <span>
-                    <time datetime="{{ education.start_date }}">{{ education.start_date | date: "%B %d, %Y" }}</time>
+                    <time datetime="{{ education.start_date }}">{{ education.start_date | date: "%B %Y" }}</time>
                     -
-                    <time datetime="{{ education.end_date }}">{{ education.end_date | date: "%B %d, %Y" }}</time>
+                    <time datetime="{{ education.end_date }}">{{ education.end_date | date: "%B %Y" }}</time>
                 </span>
                 <p>{{ education.school }} | {{ education.location }}</p>
             </div>
