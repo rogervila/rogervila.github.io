@@ -1,7 +1,7 @@
 <header class="header pull-left">
 
     <!-- Mobile menu -->
-    <div class="mobile-bar visible-sm visible-xs">
+    <div class="mobile-bar visible-sm visible-xs hidden-print">
         <div class="hamburger-menu">
             <div class="bar"></div>
         </div>
@@ -18,7 +18,7 @@
     </div>
 
     <!-- Social Icons -->
-    <div class="social-icons">
+    <div class="social-icons hidden-print">
         <ul>
             <li>
                 <a target="_blank" rel="noopener noreferrer" href="{{ site.data.about.github }}" aria-label="Github">
@@ -51,7 +51,7 @@
     <!-- Social Icons end -->
 
     <!-- Navigation bar -->
-    <nav class="main-nav">
+    <nav class="main-nav hidden-print">
         <ul class="navigation">
 
             <li><a href="#about">About Me</a></li>
@@ -65,7 +65,7 @@
     <!-- Navigation bar end -->
 
     <!-- Footer Copyright -->
-    <div class="copyright">
+    <div class="copyright hidden-print">
         <span>&copy; <time>{{ 'now' | date: "%Y" }}</time> {{ site.data.about.name }}</span>
     </div>
     <!-- Footer Copyright end -->
