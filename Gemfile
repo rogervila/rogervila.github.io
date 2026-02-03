@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 group :jekyll_plugins do
     # https://pages.github.com/versions/
-    gem "github-pages", "231"
+    gem "github-pages", "232"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
