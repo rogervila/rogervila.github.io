@@ -1,10 +1,20 @@
+- title: Senior software developer
+  company: InfoPro Digital Automotive
+  location: Barcelona
+  start_date: 2024-09-16
+  end_date: null
+  goals:
+    - Modernize legacy codebases.
+    - Integrate data sources from different providers.
+    - Mentor junior developers and help them grow.
 - title: Tech Lead
   company: Wivapp.com
   location: Barcelona
   start_date: 2024-02-19
-  end_date: null
+  end_date: 2024-09-16
   goals:
     - Develop and maintain a scalable MVP solution for restaurants.
+    - Lead the development of a new product from scratch.
 - title: Senior Backend Developer
   company: Convelio
   location: Paris, France

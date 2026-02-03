@@ -38,8 +38,11 @@
 
             {% for skill in site.data.skills limit:6 %}
             <div class="col-md-6 col-sm-6 col-xs-12 item">
-                <div class="skill-info clearfix">
-                    <h3 class="pull-left">{{ skill.name }}</h3>
+                <div class="skill-info clearfix m-0">
+                    <div class="pull-left">
+                        <h3>{{ skill.name }}</h3>
+                        <p>{{ skill.description }}</p>
+                    </div>
                     <span class="pull-right">{{ skill.percentage }}%</span>
                 </div>
                 <div class="progress">

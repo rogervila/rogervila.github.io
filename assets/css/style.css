@@ -471,14 +471,12 @@ li {
     font-size: 14px;
 }
 
-
+.m-0 {
+    margin: 0 !important;
+}
 
 .about .intro ul.info li:first-child {
     padding-top: 0;
-}
-
-.about .intro p {
-    margin: 0;
 }
 
 .about .skills .item {
@@ -495,7 +493,7 @@ li {
     margin: 0;
 }
 
-.about .skills .item .skill-info span {
+.about .skills .item .skill-info span, .about .skills .item .skill-info p {
     font-family: 'Poppins', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 12px;
     font-weight: 300;
