@@ -1,0 +1,259 @@
+# Roger Vilà - Senior Backend Engineer
+
+Senior Backend Engineer with over 12 years of professional experience designing, building, and operating cloud-native backend systems and distributed architectures.
+
+## Profile Details
+- **Role:** Senior Backend Engineer
+- **Birthday:** April 17, 1992
+- **Location:** Sitges, Barcelona
+- **Website:** https://rogervila.es
+- **GitHub:** https://github.com/rogervila
+- **LinkedIn:** https://es.linkedin.com/in/rogervilacamon
+- **Stack Overflow:** https://stackoverflow.com/users/3333549/rogervila
+
+---
+
+## About Me
+As a Senior Backend Engineer with over 12 years of professional experience, I design and deliver cloud-native backend systems and distributed architectures that power scalable, mission-critical applications. I have worked extensively with AWS and Cloudflare to build and operate secure, high-availability services, and I bring hands-on experience with Kubernetes for container orchestration and Docker for containerised workloads across both professional and personal environments.
+
+My core expertise spans the design of secure RESTful APIs and event-driven architectures — using messaging systems such as Apache Pulsar, AWS SQS, and Redis Pub/Sub — as well as data modelling across relational databases (MySQL, PostgreSQL) and NoSQL stores (MongoDB, Redis). I have consistently delivered reliability improvements: maintaining a 99% SLA at Convelio, reducing tech debt and incidents by 20% at InfoPro Digital Automotive, and managing incidents with structured postmortem practices.
+
+I am experienced with observability and monitoring tooling, including Grafana, Datadog, and the ELK Stack, and I apply SRE principles — incident prioritisation, man-day budgets for tech maintenance, and postmortem-driven improvements — to keep production systems stable and continuously improving. I have also worked with Java and contributed to CI/CD pipelines using Jenkins.
+
+Throughout my career I have acted as a technical leader and mentor, guiding distributed remote teams across Europe and Asia, conducting design and code reviews, and raising engineering standards through automation, testing, and shared best practices.
+
+Beyond my professional work, I actively contribute to open-source software. I maintain Equipment, a Python scaffolding framework used in production environments, and a collection of AI agent skills that I use to automate engineering workflows in my personal projects.
+
+---
+
+## Skills
+
+- **Backend Engineering (90%):** REST APIs, Java, PHP (Laravel/Symfony), event-driven systems
+- **Python (90%):** Flask, FastAPI, Equipment framework, data processing
+- **PHP (90%):** Laravel, Symfony, Slim
+- **Cloud & Infrastructure (85%):** AWS, Cloudflare, Docker, and Kubernetes. Arsys as IaaS provider
+- **Databases & Messaging (85%):** MySQL, PostgreSQL, MongoDB, Redis, Apache Pulsar, AWS SQS
+- **DevOps & Observability (80%):** Grafana, Datadog, ELK Stack, Jenkins CI/CD, SonarQube
+- **JavaScript / TypeScript (80%):** React, Vue, Alpine.js, Hono.dev and Node.js
+
+---
+
+## Professional Experience
+
+### Senior Software Developer at InfoPro Digital Automotive
+- **Location:** Barcelona
+- **Dates:** September 16, 2024 - Present
+- **Details & Accomplishments:**
+  - Modernise legacy Java and PHP SaaS APIs deployed on AWS and Cloudflare, integrating data sources from multiple providers.
+  - Reduce tech debt and production incidents by 20% through systematic refactoring, tightened test coverage, and improved deployment practices.
+  - Manage incident response triaging by severity, estimating resolution timelines, and delivering structured postmortems to drive long-term reliability improvements.
+  - Mentor junior developers, conducting code reviews and sharing backend engineering best practices across the team.
+
+### Tech Lead at Wivapp.com
+- **Location:** Barcelona
+- **Dates:** February 19, 2024 - September 16, 2024
+- **Details & Accomplishments:**
+  - Develop and maintain a scalable MVP solution for restaurants.
+  - Lead the development of a new product from scratch.
+
+### Senior Backend Developer at Convelio
+- **Location:** Paris, France
+- **Dates:** May 1, 2022 - February 19, 2024
+- **Details & Accomplishments:**
+  - Design and maintain scalable, secure PHP-based APIs supporting a high-volume enterprise logistics platform, ensuring a 99% SLA.
+  - Collaborate with frontend engineers and cross-functional teams to design and evolve the platform's API contract.
+  - Optimise API performance, latency, and reliability; implement observability practices using Grafana, Datadog, and the ELK Stack.
+  - Continuously improve code quality and maintainability through rigorous testing, peer code reviews, and adherence to engineering best practices.
+  - Refactor and harden legacy code for security and performance; eliminated over 10,000 lines of dead and unsafe code.
+
+### Senior Programming Analyst at K-LAGAN
+- **Location:** Barcelona
+- **Dates:** August 17, 2017 - May 1, 2022
+- **Details & Accomplishments:**
+  - Architect and operate a distributed microservices platform with 10+ Docker-based services, orchestrated with Kubernetes in production environments.
+  - Design and implement event-driven integrations using Apache Pulsar, AWS SQS, and Redis Pub/Sub, decoupling services for improved scalability and fault tolerance.
+  - Use Laravel for secure API integrations and background task processing; Python for data processing pipelines and RPA automation.
+  - Build and maintain Jenkins CI/CD pipelines, achieving 80% code coverage on SonarQube across the platform.
+  - Act as tech lead for remote engineering teams across Europe and Asia conducting architecture reviews, code reviews, and technical mentorship.
+
+### Full Stack Developer at HEALTH DATALINE EUROPE SA
+- **Location:** Barcelona
+- **Dates:** March 1, 2017 - August 17, 2017
+- **Details & Accomplishments:**
+  - Adapt eCommerce websites creating new front-end versions for specific devices with Onsen UI. More than 10 client websites migrated.
+  - Create internal APIs to retrieve data from different data sources on the backend.
+  - Maintain and apply SEO to toopharm.com and healthdataline.com websites, increasing by 1% of new visits every month.
+
+### CEO & Co-Founder at SeeDoCare S.L.
+- **Location:** Barcelona
+- **Dates:** October 8, 2015 - March 1, 2017
+- **Details & Accomplishments:**
+  - Develop web applications tailored to our client's needs. 3 clients in the first year.
+  - Implement custom eCommerce, SaaS, and CMS solutions. 20% cost reduction compared to other B2B platforms.
+  - Integrate additional services like SEO, Brand design, and Marketing solutions.
+  - In 2017, the lack of big clients plus the job offer we found on the market made us take the decision to close the business and work full-time for other companies.
+
+### Software Developer at Emotion Experience
+- **Location:** Barcelona
+- **Dates:** November 1, 2016 - February 1, 2017
+- **Details & Accomplishments:**
+  - Develop an interactive space where the public can interact with the GFT brand directly.
+  - Create a specific software for each action, working with LED displays and interactive panels.
+  - Develop software for a specific setup for GFT called "GFT Lab".
+
+### Web Developer at caravelo
+- **Location:** Barcelona
+- **Dates:** November 1, 2015 - November 1, 2016
+- **Details & Accomplishments:**
+  - Develop a product for Volaris Airline company called "Volado Volaris", which offered cheap trips with few hours in advance for planes with empty seats. First released after 1 month.
+  - Maintain product websites for Airline companies.
+  - Implement a design system to easily integrate new Airline companies into our products. 2 new airlines used it.
+
+### Web Developer at SIQUR S.P.A.
+- **Location:** Italy
+- **Dates:** April 17, 2015 - November 1, 2015
+- **Details & Accomplishments:**
+  - Develop the Spanish version of the eCommerce website. 1-10 monthly products sold in the first year.
+  - Develop a WordPress blog as part of the marketing strategy. 1-2 posts every month by external collaborators.
+  - Managed video editing, blog writing, SEO, analytics, and marketing campaigns.
+
+### Web Developer Instructor at Centro Informática Profesional CIPSA
+- **Location:** Italy (Barcelona/Remote)
+- **Dates:** October 8, 2014 - April 17, 2015
+- **Details & Accomplishments:**
+  - Hired as an instructor after finishing the Full Stack Web Design and Programming Master. More than 50 students in 1 year.
+  - Guide my students to grow up as developers, starting with a very simple HTML landing page and finishing the course with a big full-stack project.
+  - More than 50% of students found a job after finishing the course.
+
+### Web Developer at Mediterrani Food
+- **Location:** Barcelona
+- **Dates:** May 1, 2013 - June 21, 2014
+- **Details & Accomplishments:**
+  - Develop and maintain 1 WordPress site.
+  - Blog writing, video editing, Community management, and SEO. More than 10 new clients thanks to that content.
+  - Apply the brand design to the website, reports, and communications.
+
+---
+
+## Education
+
+- **Master's degree, Web Development Master** (September 1, 2013 - June 21, 2014) - CIPSA Barcelona
+- **Bachelor of Arts (B.A.), Music Theory and Composition** (September 1, 2010 - June 21, 2014) - Conservatori Liceu, Barcelona
+- **Bachelor of Arts (B.A.), Composition** (September 1, 2012 - June 21, 2013) - Sibelius-Akatemia - Sibelius-Akademin, Helsinki
+- **Associate's degree, Music Performance, General** (September 1, 2008 - June 10, 2010) - Conservatori Liceu, Barcelona
+
+---
+
+## Portfolio & Projects
+
+### Equipment
+- **Category:** Python
+- **Description:** Production-ready Python scaffolding framework for scalable backend projects.
+- **Project URL:** https://equipment-python.vercel.app
+- **Image URL:** https://equipment-python.vercel.app/img/logo.svg
+- **Badges:**
+  - PyPI downloads: https://img.shields.io/pypi/dm/equipment.svg?style=social
+
+### Array Diff Multidimensional
+- **Category:** PHP
+- **Description:** Compare the difference between two multidimensional arrays.
+- **Project URL:** https://github.com/rogervila/array-diff-multidimensional
+- **Image URL:** https://banners.beyondco.de/Array%20Diff%20Multidimensional.png?theme=light&packageManager=composer+require&packageName=rogervila%2Farray-diff-multidimensional&pattern=architect&style=style_1&description=Works+like+the+PHP+array_diff%28%29+function%2C+but+with+multidimensional+arrays.&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Fwww.php.net%2Fimages%2Flogos%2Fnew-php-logo.svg
+- **Badges:**
+  - Composer downloads: https://poser.pugx.org/rogervila/array-diff-multidimensional/downloads
+  - GitHub stars: https://img.shields.io/github/stars/rogervila/array-diff-multidimensional.svg?style=social
+
+### Laravel Email Failer
+- **Category:** PHP
+- **Description:** Assert what happens on your Laravel Application when an email fails to send.
+- **Project URL:** https://github.com/rogervila/laravel-email-failer
+- **Image URL:** https://madewithnetworkfra.fra1.digitaloceanspaces.com/spatie-space-production/13020/laravel-email-failures.jpg
+- **Badges:**
+  - Composer downloads: https://poser.pugx.org/rogervila/laravel-email-failer/downloads
+  - GitHub stars: https://img.shields.io/github/stars/rogervila/laravel-email-failer.svg?style=social
+
+### PHP SonarQube Scanner
+- **Category:** PHP
+- **Description:** Integrate SonarQube static analysis into CI/CD pipelines via Composer.
+- **Project URL:** https://github.com/rogervila/php-sonarqube-scanner
+- **Image URL:** https://i.imgur.com/xcIhGwP.png
+- **Badges:**
+  - Composer downloads: https://poser.pugx.org/rogervila/php-sonarqube-scanner/downloads
+  - GitHub stars: https://img.shields.io/github/stars/rogervila/php-sonarqube-scanner.svg?style=social
+
+### Provably Fair
+- **Category:** PHP
+- **Description:** PHP implementation of Bustabit's Provably Fair system.
+- **Project URL:** https://github.com/rogervila/provably-fair
+- **Image URL:** https://i.imgur.com/Z0QCVwf.jpg
+- **Badges:**
+  - Composer downloads: https://poser.pugx.org/rogervila/provably-fair/downloads
+  - GitHub stars: https://img.shields.io/github/stars/rogervila/provably-fair.svg?style=social
+
+### Python Simple Rules Engine
+- **Category:** Python
+- **Description:** Simple rules engine written in Python.
+- **Project URL:** https://github.com/rogervila/python_simple_rules_engine
+- **Image URL:** https://rogervila.es/static/img/python_simple_rules_engine.png
+- **Badges:**
+  - PyPI downloads: https://img.shields.io/pypi/dm/python-simple-rules-engine
+  - GitHub stars: https://img.shields.io/github/stars/rogervila/python_simple_rules_engine.svg?style=social
+
+### Python DTO
+- **Category:** Python
+- **Description:** Data Transfer Objects (DTO) for Python backend applications.
+- **Project URL:** https://github.com/rogervila/py_dto
+- **Image URL:** https://rogervila.es/static/img/py_dto.png
+- **Badges:**
+  - PyPI downloads: https://img.shields.io/pypi/dm/py_dto
+  - GitHub stars: https://img.shields.io/github/stars/rogervila/py_dto.svg?style=social
+
+---
+
+## Testimonials
+
+### Marcial C.
+- **Role:** SW Senior Manager at HP
+- **Profile URL:** https://www.linkedin.com/in/marcialclotet/
+- **Date:** May 13, 2022
+- **Feedback:**
+  "Roger is a fantastic person to work with, and is not only a multi-skilled and insightful developer, but also an inspiring colleague. He has been a great team member from day one with very strong problem solving skills. Another area I’d like to highlight is his strong background in dev-ops, which has been fundamental to our team. Roger is an asset to any company."
+
+### Louis H.
+- **Role:** Senior Backend Engineer @ Convelio
+- **Profile URL:** https://www.linkedin.com/in/louishatier/
+- **Date:** February 24, 2024
+- **Feedback:**
+  "I highly recommend Roger for any backend development role. He possesses a remarkable combination of technical expertise and problem-solving abilities. Roger can work with various programming languages and frameworks, coupled with experience in designing and implementing scalable backend solutions, which makes him a valuable asset to any team. Moreover, Roger consistently demonstrates strong communication skills and a collaborative approach, ensuring seamless integration with cross-functional teams. Beyond his technical abilities, Roger is genuinely a nice person, and it has been a pleasure working with him!"
+
+### Carlos Alberto T.
+- **Role:** SW Engineer Senior II
+- **Profile URL:** https://www.linkedin.com/in/carlos-alberto-t-a68b7544/
+- **Date:** May 13, 2022
+- **Feedback:**
+  "Roger is a multidisciplinary developer who can implement and take to term, software solutions to which he applies his outstanding problem solving skills for both conventional and unconventional day to day issues. Great team player and thinker, he will be missed when he joins your future projects which he will undertake tirelessly."
+
+### Didac E.
+- **Role:** Intelligent Automation Engineer
+- **Profile URL:** https://www.linkedin.com/in/didac-elgueta/
+- **Feedback:**
+  "Roger worked as my lead mentor in HP. He was in charge of supervising my workday. He used his developing deep knowledge to lead all our team to the next level. I recommend him as a great professional and mainly for being an amazing leader."
+
+### Eric L.
+- **Role:** Senior Consultant
+- **Profile URL:** https://www.linkedin.com/in/eric-liebstreich-b9153240/
+- **Feedback:**
+  "Conozco a Roger desde el punto de partida de su carrera profesional como alumno. Su desempeño siempre fue sobresaliente, con grandes aptitudes a nivel profesional. Personalmente es una persona que está siempre predispuesta a ayudar a los compañeros. Ha adquirido muchos conocimientos y los seguirá adquiriendo gracias a su disciplina y determinación. Siempre agradecido de haber coincidido en nuestras carreras."
+
+### Guillem B.
+- **Role:** DevSecOps at Submer - K-LAGAN
+- **Profile URL:** https://www.linkedin.com/in/guillem-bonamusa/
+- **Date:** November 24, 2021
+- **Feedback:**
+  "Roger is a very good developer with nice infra skills. Their future vision and his effort give the team the ability to grow and be a referent as the good method to deploy in a SaaS, with the best code quality and full code coverage. At the team level, he has excellent skills to tech all the team, and manage as a natural tech lead, at the personal level, he is a friend. He helps me to grow from sysAdmin to DevOps."
+
+### Roberto F.
+- **Role:** SW QA Tester
+- **Profile URL:** https://www.linkedin.com/in/roberto-ferreiro-mart%C3%ADn-23b10886/
+- **Feedback:**
+  "Gran profesional. Muestra mucho compromiso en todas las tareas que realiza, contribuye a mejorar el ambiente del equipo y siempre está dispuesto a ayudar a sus compañeros desde la humildad."
