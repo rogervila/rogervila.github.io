@@ -15,9 +15,9 @@
     <!-- Control -->
     <div class="control">
         <ul>
-            <li class="active"><span class="filter" data-filter="all">All Projects</span></li>
+            <li class="active"><button class="filter" data-filter="all" type="button">All Projects</button></li>
             {% for category in categories %}
-            <li><span class="filter" data-filter="{{ category }}">
+            <li><button class="filter" data-filter="{{ category }}" type="button">
                     {% case category %}
                     {% when 1, "1" %}
                     PHP
@@ -28,7 +28,7 @@
                     {% else %}
                     {{ category }}
                     {% endcase %}
-                </span></li>
+                </button></li>
             {% endfor %}
         </ul>
     </div>
@@ -41,17 +41,24 @@
                 <span class="work-image">
                     <div class="title">
                         <div class="inner">
-                            <h2><a style="color:white" rel="noopener noreferrer" target="_blank"
-                                    href="{{ project.url }}">{{ project.name }}</a></h2>
+                            <h3><a style="color:white" rel="noopener noreferrer" target="_blank"
+                                    href="{{ project.url }}">{{ project.name }}</a></h3>
                             {% for badge in project.badges %}
+                            {% if badge contains 'stars' %}
+                              {% assign badge_alt = 'GitHub stars badge' %}
+                            {% elsif badge contains 'downloads' or badge contains '/dm/' %}
+                              {% assign badge_alt = 'Downloads badge' %}
+                            {% else %}
+                              {% assign badge_alt = 'Project badge' %}
+                            {% endif %}
                             <img style="display: block; margin: 10px auto;" loading="lazy" src="{{ badge }}"
-                                alt="badge">
+                                alt="{{ badge_alt }}">
                             {% endfor %}
                         </div>
                     </div>
                 </span>
                 <div class="overlay"></div>
-                <img loading="lazy" src="{{ project.image }}" alt="{{ project.name }}">
+                <img loading="lazy" src="{{ project.image }}" alt="Screenshot of {{ project.name }}">
             </div>
         </div>
         {% endfor %}

@@ -10,7 +10,7 @@
         {% for job in site.data.resume %}
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="{% if forloop.index == 1 %}top-item {% endif %}resume-item">
-                <h2>{{ job.title }} | {{ job.company }}</h2>
+                <h3>{{ job.title }} | {{ job.company }}</h3>
                 <span>
                     <time datetime="{{ job.start_date }}">{{ job.start_date | date: "%B %Y" }}</time>
                     -

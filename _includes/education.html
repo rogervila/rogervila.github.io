@@ -9,7 +9,7 @@
         {% for education in site.data.education %}
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="{% if forloop.index == 1 %}top-item {% endif %}resume-item">
-                <h2>{{ education.title }}</h2>
+                <h3>{{ education.title }}</h3>
                 <span>
                     <time datetime="{{ education.start_date }}">{{ education.start_date | date: "%B %Y" }}</time>
                     -

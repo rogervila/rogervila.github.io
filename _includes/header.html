@@ -2,14 +2,14 @@
 
     <!-- Mobile menu -->
     <div class="mobile-bar visible-sm visible-xs hidden-print">
-        <div class="hamburger-menu">
-            <div class="bar"></div>
-        </div>
+        <button class="hamburger-menu" aria-label="Toggle menu" type="button">
+            <span class="bar" aria-hidden="true"></span>
+        </button>
     </div>
     <!-- Mobile menu end -->
 
     <div class="avatar">
-        <img height="165" width="165" loading="lazy" src="{{ site.data.about.image }}" alt="{{ site.data.about.name }}">
+        <img height="165" width="165" loading="lazy" src="{{ site.data.about.image }}" alt="Portrait of {{ site.data.about.name }}">
     </div>
 
     <div class="name">

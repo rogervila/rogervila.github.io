@@ -178,7 +178,7 @@ li {
 /*                      HEADER                                     */
 /*-----------------------------------------------------------------*/
 .header {
-    background: #16b4c7;
+    background: #0f8291;
     padding: 46px;
     position: fixed;
     height: 100%;
@@ -215,7 +215,7 @@ li {
 }
 
 .header .name span {
-    color: #d8d8e9;
+    color: rgba(255, 255, 255, 0.95);
     font-family: 'Poppins', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -289,7 +289,7 @@ li {
 }
 
 .header .copyright span {
-    color: #d8d8e9;
+    color: rgba(255, 255, 255, 0.95);
     font-family: 'Poppins', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -315,6 +315,11 @@ li {
     width: 30px;
     height: 55px;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    margin-top: -22px;
 }
 
 .header .bar,
@@ -329,6 +334,7 @@ li {
     transform: translateY(25px);
     background: #fff;
     transition: all 0 300ms;
+    display: block;
 }
 
 .header .bar.animate {
@@ -395,7 +401,7 @@ li {
 }
 
 .main-content section .section-header h2 {
-    color: #16b4c7;
+    color: #0f8291;
     display: inline-block;
     font-family: 'Poppins', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 17px;
@@ -493,7 +499,8 @@ li {
     margin: 0;
 }
 
-.about .skills .item .skill-info span, .about .skills .item .skill-info p {
+.about .skills .item .skill-info span,
+.about .skills .item .skill-info p {
     font-family: 'Poppins', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -505,7 +512,7 @@ li {
     position: absolute;
     right: 0;
     top: -12px;
-    background: #16b4c7;
+    background: #0f8291;
     font-family: 'Poppins', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -566,19 +573,28 @@ li {
     padding: 0 20px 0 0;
 }
 
-.works .control ul li a {
+.works .control ul li .filter {
     color: #9E9E9E;
     cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
     font-family: 'Poppins', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 14px;
+    -webkit-transition: color .3s ease-in-out;
+    -moz-transition: color .3s ease-in-out;
+    -o-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
-.works .control ul li a:hover {
+.works .control ul li .filter:hover,
+.works .control ul li .filter:focus {
     color: #1a1a1a;
     text-decoration: none;
+    outline: none;
 }
 
-.works .control ul li.active a {
+.works .control ul li.active .filter {
     color: #1a1a1a;
 }
 
@@ -796,7 +812,7 @@ li {
 /* === Button === */
 .btn-default {
     color: #FFF;
-    background-color: #16b4c7;
+    background-color: #0f8291;
     border: 0;
     border-radius: 0;
     font-size: 12px;
@@ -810,7 +826,7 @@ li {
 
 .btn-default:hover {
     color: #FFF;
-    background-color: #16b4c7;
+    background-color: #0f8291;
     border: 0;
 }
 
@@ -835,7 +851,7 @@ li {
     line-height: 1px;
     color: #fff;
     text-align: center;
-    background-color: #16b4c7;
+    background-color: #0f8291;
     -webkit-box-shadow: none;
     box-shadow: none;
     -webkit-transition: width .6s ease;
@@ -882,7 +898,7 @@ li {
     margin: 5px 3px;
     filter: Alpha(Opacity=20);
     opacity: .2;
-    background: #16b4c7;
+    background: #0f8291;
 }
 
 .owl-theme .owl-controls {
@@ -987,4 +1003,19 @@ li {
 
 .filter {
     cursor: pointer;
+}
+
+/* Accessibility and WCAG improvements */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #0f8291 !important;
+    outline-offset: 4px !important;
+}
+
+.header .hamburger-menu:focus-visible {
+    outline: 2px solid #ffffff !important;
+    outline-offset: 4px !important;
 }
