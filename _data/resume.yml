@@ -4,9 +4,10 @@
   start_date: 2024-09-16
   end_date: null
   goals:
-    - Modernize legacy codebases.
-    - Integrate data sources from different providers.
-    - Mentor junior developers and help them grow.
+    - Modernise legacy Java and PHP SaaS APIs deployed on AWS and Cloudflare, integrating data sources from multiple providers.
+    - Reduce tech debt and production incidents by 20% through systematic refactoring, tightened test coverage, and improved deployment practices.
+    - Manage incident response triaging by severity, estimating resolution timelines, and delivering structured postmortems to drive long-term reliability improvements.
+    - Mentor junior developers, conducting code reviews and sharing backend engineering best practices across the team.
 - title: Tech Lead
   company: Wivapp.com
   location: Barcelona
@@ -21,21 +22,22 @@
   start_date: 2022-05-01
   end_date: 2024-02-19
   goals:
-    - Develop and maintain scalable and secure PHP-based APIs.
-    - Collaborate with frontend developers to design and implement our API.
-    - Optimize API performance and ensure uptime. 99% SLA guaranteed.
-    - Continuously improve the quality and maintainability of the codebase, including following best practices for code quality and testing.
-    - Refactor legacy code to increase security and performance. Deleted more than 10k LOC
+    - Design and maintain scalable, secure PHP-based APIs supporting a high-volume enterprise logistics platform, ensuring a 99% SLA.
+    - Collaborate with frontend engineers and cross-functional teams to design and evolve the platform's API contract.
+    - Optimise API performance, latency, and reliability; implement observability practices using Grafana, Datadog, and the ELK Stack.
+    - Continuously improve code quality and maintainability through rigorous testing, peer code reviews, and adherence to engineering best practices.
+    - Refactor and harden legacy code for security and performance; eliminated over 10,000 lines of dead and unsafe code.
 - title: Senior Programming Analyst
   company: K-LAGAN
   location: Barcelona
   start_date: 2017-08-17
   end_date: 2022-05-01
   goals:
-    - Leverage different project functionalities across shared micro-services based on Docker. with more than 10 services implemented.
-    - Use Laravel for API integrations and background tasks, and Python for data processing and RPA tools.
-    - Tech lead across remote teams from different world locations, including Asia and Europe.
-    - Ensure code quality and functionality integration. by reaching 80% coverage on SonarQube.
+    - Architect and operate a distributed microservices platform with 10+ Docker-based services, orchestrated with Kubernetes in production environments.
+    - Design and implement event-driven integrations using Apache Pulsar, AWS SQS, and Redis Pub/Sub, decoupling services for improved scalability and fault tolerance.
+    - Use Laravel for secure API integrations and background task processing; Python for data processing pipelines and RPA automation.
+    - Build and maintain Jenkins CI/CD pipelines, achieving 80% code coverage on SonarQube across the platform.
+    - Act as tech lead for remote engineering teams across Europe and Asia conducting architecture reviews, code reviews, and technical mentorship.
 - title: Full Stack Developer
   company: HEALTH DATALINE EUROPE SA
   location: Barcelona
@@ -61,8 +63,8 @@
   start_date: 2016-11-01
   end_date: 2017-02-01
   goals:
-    - Develop 1 interactive space where the public can interact with the GFT brand directly.
-    - Create 1 specific software for each action, working with LED displays and interactive panels.
+    - Develop an interactive space where the public can interact with the GFT brand directly.
+    - Create a specific software for each action, working with LED displays and interactive panels.
     - Develop software for a specific setup for GFT called <a rel="noopener noreferrer" target="_blank" href="https://www.lightsoundgroup.com/portfolio/gft-lab/">"GFT Lab"</a>.
 - title: Web Developer
   company: ( caravelo (

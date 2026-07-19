@@ -6,3 +6,8 @@ _javascript/package-lock.json
 _javascript/yarn.lock
 .DS_Store
 .ruby-version
+.agents
+.github/agents
+skills-lock.json
+.claude
+tmp/

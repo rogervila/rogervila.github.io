@@ -1,5 +1,5 @@
 ---
-title: Senior Backend Developer - Roger Vilà
+title: Senior Backend Engineer – Cloud & Distributed Systems | Roger Vilà
 timezone: Europe/Madrid
 collections:
   posts:
@@ -31,8 +31,10 @@ instant_page: false
 cloudinary:
   base: https://res.cloudinary.com/rogervila/image/upload/
 lang: en
-description: Roger Vilà is a Experienced Senior Backend Developer with 10+ years expertise
-  in building backend systems with Laravel, Symfony, PHP, Javascript and Python
+description: Roger Vilà is a Senior Backend Engineer with 12+ years of expertise designing
+  cloud-native distributed systems, secure REST APIs, and scalable microservices on
+  AWS and Cloudflare, with hands-on experience in Docker, event-driven architectures,
+  observability tooling, and technical leadership across global engineering teams.
 url: https://rogervila.es
 author:
   twitter: _rogervila
