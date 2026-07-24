@@ -9,7 +9,8 @@
     <!-- Mobile menu end -->
 
     <div class="avatar">
-        <img height="165" width="165" loading="lazy" src="{{ site.data.about.image }}" alt="Portrait of {{ site.data.about.name }}">
+        <img height="165" width="165" loading="lazy" src="{{ site.data.about.image }}"
+            alt="Portrait of {{ site.data.about.name }}">
     </div>
 
     <div class="name">
@@ -58,15 +59,21 @@
             <li><a href="#experience">Resume</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#works">Projects</a></li>
-
             <li><a href="mailto:{{ site.data.about.email }}">Contact</a></li>
+            <li>
+                <a href="/resume.pdf" target="_blank">
+                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                    Download resume
+                </a>
+            </li>
         </ul>
     </nav>
     <!-- Navigation bar end -->
 
     <!-- Footer Copyright -->
     <div class="copyright hidden-print">
-        <span>&copy; <time datetime="{{ 'now' | date: "%Y-%m-%d" }}">{{ 'now' | date: "%Y" }}</time> {{ site.data.about.name }}</span>
+        <span>&copy; <time datetime="{{ 'now' | date: " %Y-%m-%d" }}">{{ 'now' | date: "%Y" }}</time>
+            {{ site.data.about.name }}</span>
     </div>
     <!-- Footer Copyright end -->
 

@@ -57,6 +57,24 @@ layout: compress
     <meta property="og:image:height" content="628">
 
     <link rel="canonical" href="https://rogervila.es">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": {{ site.social.name | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "image": {{ site.logo | jsonify }},
+      "jobTitle": "Senior Backend Engineer",
+      "description": {{ site.description | jsonify }},
+      "sameAs": [
+        {% for link in site.social.links %}{{ link | jsonify }},
+        {% endfor %}{{ site.linkedin | jsonify }},
+        {{ site.stackoverflow.profile | jsonify }},
+        {{ site.blog | jsonify }}
+      ]
+    }
+    </script>
 </head>
 
 <body>
