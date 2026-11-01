@@ -1019,3 +1019,33 @@ textarea:focus-visible {
     outline: 2px solid #ffffff !important;
     outline-offset: 4px !important;
 }
+/*-----------------------------------------------------------------*/
+/*                      SEMANTIC MARKUP RESETS                     */
+/*-----------------------------------------------------------------*/
+.testimonials figure {
+    margin: 0;
+}
+
+.testimonials blockquote {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: inherit;
+}
+
+.testimonials cite {
+    font-style: normal;
+}
+
+.testimonials .item .thumb img {
+    width: 100%;
+    height: auto;
+}
+
+.about address {
+    margin: 0;
+}
+
+.works .item-outer .work-image {
+    display: block;
+}

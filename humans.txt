@@ -6,7 +6,10 @@ layout:
 # The humans responsible & technology colophon
 
 # TEAM
-    Roger Vilà -- Developer -- @_rogervila
+    {{ site.data.about.name }} -- {{ site.data.about.role }} -- @{{ site.twitter.username }}
+    Site: {{ site.url }}
+    GitHub: {{ site.data.about.github }}
+    LinkedIn: {{ site.data.about.linkedin }}
 
 # TECHNOLOGY COLOPHON
 

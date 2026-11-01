@@ -1,16 +1,89 @@
 name: Roger Vilà
-role: Senior Backend Engineer
+given_name: Roger
+family_name: Vilà
+role: Software Architect
+tagline: Distributed systems, cloud & legacy modernisation
 image: https://res.cloudinary.com/rogervila/image/upload/f_auto,q_auto:best,w_300,h_300,c_fill,g_face,dpr_auto,r_max/roger-vila-camon
+# Square, unrounded portrait for schema.org and the social preview image.
+photo: https://res.cloudinary.com/rogervila/image/upload/f_jpg,q_auto:best,w_600,h_600,c_fill,g_face/roger-vila-camon.jpg
+# Social preview image (1200x630), built by _scripts/build_og_image.py.
+og_image: /assets/img/og-image.png
+og_image_alt: Roger Vilà, Software Architect. Distributed systems, cloud and legacy modernisation.
+
+# Search and social metadata. Keep seo_title under 60 characters and seo_description under 160.
+seo_title: Roger Vilà | Software Architect, Distributed Systems & Cloud
+seo_description: >-
+  Barcelona-based software architect with 13 years of experience: event-driven Kubernetes
+  platforms for HP, legacy Java/PHP modernisation on AWS and Cloudflare.
+locale: en_GB
+address:
+  locality: Sitges
+  region: Catalonia
+  region_code: ES-CT
+  country: ES
+  # Town-level coordinates only.
+  latitude: 41.235
+  longitude: 1.811
+website: https://rogervila.es
 github: https://github.com/rogervila
 stack-overflow: https://stackoverflow.com/users/3333549/rogervila
 linkedin: https://es.linkedin.com/in/rogervilacamon
-birthday: 1992-04-17
-location: Sitges, Barcelona
+location: Sitges (Barcelona), Spain
+work_mode: Remote roles | CET / CEST
 email: rogervila@me.com
+# The phone number is only printed in resume.pdf (scripts/build_resume_pdf.py).
+# It is not rendered on the website or in llms.txt.
 phone: +34 666 148 225
-description: |
-  <p>As a Senior Backend Engineer with over 12 years of professional experience, I design and deliver cloud-native backend systems and distributed architectures that power scalable, mission-critical applications. I have worked extensively with <strong>AWS</strong> and <strong>Cloudflare</strong> to build and operate secure, high-availability services, and I bring hands-on experience with <strong>Kubernetes</strong> for container orchestration and <strong>Docker</strong> for containerised workloads across both professional and personal environments.</p>
-  <p>My core expertise spans the design of <strong>secure RESTful APIs</strong> and <strong>event-driven architectures</strong> — using messaging systems such as Apache Pulsar, AWS SQS, and Redis Pub/Sub — as well as data modelling across relational databases (<strong>MySQL, PostgreSQL</strong>) and NoSQL stores (<strong>MongoDB, Redis</strong>). I have consistently delivered reliability improvements: maintaining a 99% SLA at Convelio, reducing tech debt and incidents by 20% at InfoPro Digital Automotive, and managing incidents with structured postmortem practices.</p>
-  <p>I am experienced with <strong>observability and monitoring</strong> tooling, including Grafana, Datadog, and the ELK Stack, and I apply SRE principles — incident prioritisation, man-day budgets for tech maintenance, and postmortem-driven improvements — to keep production systems stable and continuously improving. I have also worked with <strong>Java</strong> and contributed to CI/CD pipelines using Jenkins.</p>
-  <p>Throughout my career I have acted as a <strong>technical leader and mentor</strong>, guiding distributed remote teams across Europe and Asia, conducting design and code reviews, and raising engineering standards through automation, testing, and shared best practices.</p>
-  <p>Beyond my professional work, I actively contribute to <strong>open-source software</strong>. I maintain <a rel="noopener noreferrer" target="_blank" href="https://equipment-python.vercel.app">Equipment</a>, a Python scaffolding framework used in production environments, and a collection of <a rel="noopener noreferrer" target="_blank" href="https://github.com/rogervila/agent-skills">AI agent skills</a> that I use to automate engineering workflows in my personal projects.</p>
+
+# Short profile used by resume.pdf and llms.txt. **text** renders as bold in the PDF.
+summary: >-
+  Software architect with **13 years of professional experience**. Architected a 10+ service,
+  event-driven platform on Kubernetes for **HP**, and now modernise legacy Java and PHP SaaS APIs on
+  **AWS and Cloudflare** at InfoPro Digital Automotive. Builds secure REST APIs and event-driven
+  integrations (Apache Pulsar, AWS SQS), implements observability (Grafana, Datadog, ELK Stack) and
+  manages incident response. Former **founder** of a web development company and **startup tech lead**
+  who took a restaurant product from scratch to an MVP launched for investors.
+
+# Long profile rendered in the "About Me" section of the website (one HTML paragraph per item).
+profile:
+  - >-
+    Software architect with 13 years of professional experience. I design and build backend systems on
+    <strong>AWS</strong> and <strong>Cloudflare</strong>, <strong>event-driven architectures</strong> and
+    <strong>secure REST APIs</strong>, and I modernise legacy Java and PHP platforms.
+  - >-
+    As a consultant at <strong>HP</strong> (through K-LAGAN), I architected and operated a platform of
+    10+ containerised microservices on <strong>Kubernetes</strong>, integrated through Apache Pulsar,
+    AWS SQS and Redis Pub/Sub, and led remote engineering teams across Europe and Asia. At
+    <strong>InfoPro Digital Automotive</strong>, I modernise legacy Java and PHP SaaS APIs and manage
+    incident response for the platform.
+  - >-
+    I run production systems with <strong>observability</strong> (Grafana, Datadog, ELK Stack), CI/CD
+    quality checks (Jenkins, SonarQube), structured postmortems and man-day budgets for technical maintenance. At InfoPro Digital Automotive, systematic refactoring,
+    stronger test coverage and safer deployments reduced production incidents by 20%.
+  - >-
+    I also have founder and startup experience. I founded and ran <strong>SeeDoCare</strong>, a web
+    development company, in parallel with my employed roles. As <strong>Tech Lead at Wivapp</strong>,
+    I took a new restaurant product from scratch to an MVP launched for investors.
+  - >-
+    I maintain <strong>open-source software</strong>:
+    <a rel="noopener noreferrer" target="_blank" href="https://equipment-python.vercel.app">Equipment</a>,
+    a Python scaffolding framework used in production environments, PHP and Python packages published on
+    Packagist and PyPI, and a collection of
+    <a rel="noopener noreferrer" target="_blank" href="https://github.com/rogervila/agent-skills">AI agent skills</a>
+    that automate engineering workflows.
+
+# Open-source summary printed in resume.pdf.
+open_source:
+  - name: Equipment
+    url: https://equipment-python.vercel.app
+    text: >-
+      Maintain a Python scaffolding framework used in production, with configuration, storage,
+      database connections, scheduled tasks and queue management.
+  - name: PHP developer tooling
+    url: https://github.com/rogervila
+    text: >-
+      Published Packagist packages, including Array Diff Multidimensional, Laravel Email Failer and
+      PHP SonarQube Scanner.
+  - name: AI agent skills
+    url: https://github.com/rogervila/agent-skills
+    text: Maintain reusable skills that automate engineering workflows.

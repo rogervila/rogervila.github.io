@@ -1,7 +1,7 @@
-<section id="testimonials" class="testimonials hidden-print">
+<section id="testimonials" class="testimonials hidden-print" aria-labelledby="testimonials-title">
 
     <div class="section-header">
-        <h2>Testimonials</h2>
+        <h2 id="testimonials-title">Testimonials</h2>
     </div>
 
     <!-- Carousel -->
@@ -13,16 +13,23 @@
                 <div class="col-md-2 col-sm-2 hidden-xs">
                     <div class="thumb">
                         <a href="{{ testimonial.url }}" rel="noopener noreferrer" target="_blank">
-                            <img loading="lazy"
-                                src="https://ui-avatars.com/api/?name={{ testimonial.name }}&color=16B4C7&background=FAFAFA"
+                            <img loading="lazy" decoding="async" width="80" height="80"
+                                src="https://ui-avatars.com/api/?name={{ testimonial.name | url_encode }}&amp;size=160&amp;color=16B4C7&amp;background=FAFAFA"
                                 alt="{{ testimonial.name }}">
                         </a>
                     </div>
                 </div>
-                <div class="text col-md-10 col-sm-10 col-xs-12">
-                    <p>{{ testimonial.content }}</p>
-                    <span class="author">- {{ testimonial.name }}, {{ testimonial.role }} -</span>
-                </div>
+                <figure class="text col-md-10 col-sm-10 col-xs-12">
+                    <blockquote{% if testimonial.url %} cite="{{ testimonial.url }}"{% endif %}>
+                        <p>{{ testimonial.content }}</p>
+                    </blockquote>
+                    <figcaption>
+                        <span class="author">- <cite>{{ testimonial.name }}</cite>, {{ testimonial.role }} -</span>
+                        {% if testimonial.translated_from %}
+                        <span class="author"><em>(Translated from {{ testimonial.translated_from }})</em></span>
+                        {% endif %}
+                    </figcaption>
+                </figure>
             </div>
         </div>
         {% endfor %}

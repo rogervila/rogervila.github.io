@@ -1,26 +1,24 @@
-<section id="education" class="resume">
+<section id="education" class="resume" aria-labelledby="education-title">
 
     <div class="section-header">
-        <h2>Education</h2>
+        <h2 id="education-title">Education</h2>
 
     </div>
 
     <div class="row">
         {% for education in site.data.education %}
         <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="{% if forloop.index == 1 %}top-item {% endif %}resume-item">
-                <h3>{{ education.title }}</h3>
+            <article class="{% if forloop.index == 1 %}top-item {% endif %}resume-item p-education h-event">
+                <h3 class="p-name">{{ education.title }}</h3>
                 <span>
-                    <time datetime="{{ education.start_date }}">{{ education.start_date | date: "%B %Y" }}</time>
+                    <time class="dt-start" datetime="{{ education.start_date | date: '%Y-%m' }}">{{ education.start_date | date: "%B %Y" }}</time>
                     -
-                    <time datetime="{{ education.end_date }}">{{ education.end_date | date: "%B %Y" }}</time>
+                    <time class="dt-end" datetime="{{ education.end_date | date: '%Y-%m' }}">{{ education.end_date | date: "%B %Y" }}</time>
                 </span>
-                <p>{{ education.school }} | {{ education.location }}</p>
-            </div>
+                <p class="p-location">{{ education.school }} | {{ education.location }}</p>
+            </article>
         </div>
         {% endfor %}
-
-        <!-- Page 1 End -->
     </div>
 
 </section>

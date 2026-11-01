@@ -1,67 +1,68 @@
-<header class="header pull-left">
+{%- assign about = site.data.about -%}
+<header class="header pull-left h-card">
+    <data class="u-url u-uid" value="{{ site.url }}/"></data>
 
     <!-- Mobile menu -->
     <div class="mobile-bar visible-sm visible-xs hidden-print">
-        <button class="hamburger-menu" aria-label="Toggle menu" type="button">
+        <button class="hamburger-menu" aria-label="Toggle menu" aria-controls="site-navigation" type="button">
             <span class="bar" aria-hidden="true"></span>
         </button>
     </div>
     <!-- Mobile menu end -->
 
     <div class="avatar">
-        <img height="165" width="165" loading="lazy" src="{{ site.data.about.image }}"
-            alt="Portrait of {{ site.data.about.name }}">
+        <img class="u-photo" height="165" width="165" fetchpriority="high" decoding="async"
+            src="{{ about.image }}" alt="Portrait of {{ about.name }}">
     </div>
 
     <div class="name">
-        <h1>{{ site.data.about.name }}</h1>
-        <span>{{ site.data.about.role }}</span>
+        <h1 class="p-name">{{ about.name }}</h1>
+        <span class="p-job-title">{{ about.role }}</span>
+        <data class="p-note" value="{{ about.tagline }}"></data>
+        <data class="p-locality" value="{{ about.address.locality }}"></data>
+        <data class="p-region" value="{{ about.address.region }}"></data>
+        <data class="p-country-name" value="{{ about.address.country }}"></data>
     </div>
 
     <!-- Social Icons -->
-    <div class="social-icons hidden-print">
+    <nav class="social-icons hidden-print" aria-label="Profiles">
         <ul>
             <li>
-                <a target="_blank" rel="noopener noreferrer" href="{{ site.data.about.github }}" aria-label="Github">
+                <a class="u-url" target="_blank" rel="me noopener noreferrer" href="{{ about.github }}" aria-label="GitHub">
                     <i class="fa fa-github" aria-hidden="true"></i>
                 </a>
             </li>
             <li>
-                <a target="_blank" rel="noopener noreferrer" href="{{ site.data.about.stack-overflow }}"
-                    aria-label="StackOverflow">
+                <a class="u-url" target="_blank" rel="me noopener noreferrer" href="{{ about.stack-overflow }}"
+                    aria-label="Stack Overflow">
                     <i class="fa fa-stack-overflow" aria-hidden="true"></i>
                 </a>
             </li>
             <li>
-                <a target="_blank" rel="noopener noreferrer" href="{{ site.data.linkedin }}" aria-label="Linkedin">
+                <a class="u-url" target="_blank" rel="me noopener noreferrer" href="{{ about.linkedin }}" aria-label="LinkedIn">
                     <i class="fa fa-linkedin-square" aria-hidden="true"></i>
                 </a>
             </li>
             <li>
-                <a href="mailto:{{ site.data.about.email }}" aria-label="Email">
+                <a class="u-email" rel="me" href="mailto:{{ about.email }}" aria-label="Email">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
                 </a>
             </li>
-            <li>
-                <a href='tel:{{ site.data.about.phone | remove: " " }}' aria-label="Phone">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                </a>
-            </li>
         </ul>
-    </div>
+    </nav>
     <!-- Social Icons end -->
 
     <!-- Navigation bar -->
-    <nav class="main-nav hidden-print">
+    <nav id="site-navigation" class="main-nav hidden-print" aria-label="Main">
         <ul class="navigation">
 
             <li><a href="#about">About Me</a></li>
             <li><a href="#experience">Resume</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#works">Projects</a></li>
-            <li><a href="mailto:{{ site.data.about.email }}">Contact</a></li>
+            <li><a href="mailto:{{ about.email }}">Contact</a></li>
             <li>
-                <a href="/resume.pdf" target="_blank">
+                <a href="/resume.pdf" target="_blank" type="application/pdf">
                     <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
                     Download resume
                 </a>
@@ -72,8 +73,8 @@
 
     <!-- Footer Copyright -->
     <div class="copyright hidden-print">
-        <span>&copy; <time datetime="{{ 'now' | date: " %Y-%m-%d" }}">{{ 'now' | date: "%Y" }}</time>
-            {{ site.data.about.name }}</span>
+        <span>&copy; <time datetime="{{ site.time | date: '%Y' }}">{{ site.time | date: "%Y" }}</time>
+            {{ about.name }}</span>
     </div>
     <!-- Footer Copyright end -->
 

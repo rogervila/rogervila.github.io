@@ -1,9 +1,10 @@
-<section id="about" class="about">
+{%- assign about = site.data.about -%}
+<section id="about" class="about" aria-labelledby="about-title">
 
     <div class="section-header">
-        <h2>About Me</h2>
+        <h2 id="about-title">About Me</h2>
 
-        <a href="mailto:{{ site.data.about.email }}" class="resume-download hidden-print">
+        <a href="mailto:{{ about.email }}" class="resume-download hidden-print">
             <i class="fa fa-envelope" aria-hidden="true"></i>
             Write me an email
         </a>
@@ -12,21 +13,24 @@
     <!-- Intro -->
     <div class="intro">
 
-        {{ site.data.about.description }}
+        <div class="p-summary">
+            {% for paragraph in about.profile %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
+        </div>
 
-        <ul class="info">
-            <li><strong>Birthday:</strong>&nbsp;<time datetime="{{ site.data.about.birthday }}">{{
-                    site.data.about.birthday | date: "%B %d, %Y"
-                    }}</time></li>
-            <li><strong>Location:</strong>&nbsp;{{ site.data.about.location }}</li>
-            <li><strong>Email:</strong>&nbsp;<a href="mailto:{{ site.data.about.email }}">{{ site.data.about.email
-                    }}</a></li>
-            <li><strong>Phone:</strong>&nbsp;<a href='tel:{{ site.data.about.phone | remove: " " }}'>{{
-                    site.data.about.phone }}</a>
-            </li>
-        </ul>
-
-
+        <address class="p-contact h-card">
+            <data class="p-name" value="{{ about.name }}"></data>
+            <ul class="info">
+                <li><strong>Location:</strong>&nbsp;{{ about.location }}<data class="p-locality"
+                        value="{{ about.address.locality }}"></data><data class="p-country-name"
+                        value="{{ about.address.country }}"></data></li>
+                <li><strong>Work mode:</strong>&nbsp;{{ about.work_mode }}</li>
+                <li><strong>Email:</strong>&nbsp;<a class="u-email" href="mailto:{{ about.email }}">{{ about.email }}</a></li>
+                <li><strong>LinkedIn:</strong>&nbsp;<a class="u-url" target="_blank" rel="me noopener noreferrer"
+                        href="{{ about.linkedin }}">{{ about.linkedin | remove: 'https://' }}</a></li>
+            </ul>
+        </address>
 
     </div>
     <!-- Intro end -->
@@ -36,22 +40,14 @@
 
         <div class="row">
 
-            {% for skill in site.data.skills limit:6 %}
+            {% for skill in site.data.skills %}
             <div class="col-md-6 col-sm-6 col-xs-12 item">
-                <div class="skill-info clearfix m-0">
-                    <div class="pull-left">
-                        <h3>{{ skill.name }}</h3>
-                        <p>{{ skill.description }}</p>
-                    </div>
-                    <span class="pull-right">{{ skill.percentage }}%</span>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-label="{{ skill.name }}"
-                        aria-valuenow="{{ skill.percentage }}" aria-valuemin="0" aria-valuemax="100"
-                        style="width:{{ skill.percentage }}%">
-                    </div>
+                <div class="skill-info m-0">
+                    <h3>{{ skill.name }}</h3>
+                    <p>{% for item in skill.items %}<span class="p-skill">{{ item }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
                 </div>
             </div>
+            {% cycle '', '<div class="clearfix"></div>' %}
             {% endfor %}
 
         </div>

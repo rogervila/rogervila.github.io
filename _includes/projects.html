@@ -6,15 +6,15 @@
 
 {% assign categories = all_categories | uniq %}
 
-<section id="works" class="works clearfix hidden-print">
+<section id="works" class="works clearfix hidden-print" aria-labelledby="works-title">
 
     <div class="section-header">
-        <h2>Portfolio</h2>
+        <h2 id="works-title">Portfolio</h2>
     </div>
 
     <!-- Control -->
     <div class="control">
-        <ul>
+        <ul aria-label="Filter projects by language">
             <li class="active"><button class="filter" data-filter="all" type="button">All Projects</button></li>
             {% for category in categories %}
             <li><button class="filter" data-filter="{{ category }}" type="button">
@@ -25,6 +25,8 @@
                     Python
                     {% when 3, "3" %}
                     AI
+                    {% when 4, "4" %}
+                    JavaScript / TypeScript
                     {% else %}
                     {{ category }}
                     {% endcase %}
@@ -36,9 +38,9 @@
     <!-- Items Outer -->
     <div class="item-outer row clearfix">
         {% for project in site.data.projects %}
-        <div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="{{ project.category }}" data-sort="value">
+        <article class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="{{ project.category }}" data-sort="value">
             <div class="item">
-                <span class="work-image">
+                <div class="work-image">
                     <div class="title">
                         <div class="inner">
                             <h3><a style="color:white" rel="noopener noreferrer" target="_blank"
@@ -51,16 +53,19 @@
                             {% else %}
                               {% assign badge_alt = 'Project badge' %}
                             {% endif %}
-                            <img style="display: block; margin: 10px auto;" loading="lazy" src="{{ badge }}"
+                            <img style="display: block; margin: 10px auto;" loading="lazy" decoding="async" src="{{ badge }}"
                                 alt="{{ badge_alt }}">
                             {% endfor %}
                         </div>
                     </div>
-                </span>
+                </div>
                 <div class="overlay"></div>
-                <img loading="lazy" src="{{ project.image }}" alt="Screenshot of {{ project.name }}">
+                {% capture avatar %}https://ui-avatars.com/api/?name={{ project.name | url_encode }}&size=512&font-size=0.33&color=16B4C7&background=FAFAFA{% endcapture %}
+                {% assign project_image = project.image | strip | default: avatar %}
+                <img loading="lazy" decoding="async" src="{{ project_image }}" onerror="this.onerror=null;this.src='{{ avatar }}'"
+                    alt="{{ project.name }} cover image">
             </div>
-        </div>
+        </article>
         {% endfor %}
 
     </div>

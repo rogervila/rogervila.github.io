@@ -1,21 +1,48 @@
-- name: Cloud & Infrastructure
-  description: AWS, Cloudflare, Docker, and Kubernetes. Arsys as IaaS provider
-  percentage: 85
-- name: Backend Engineering
-  description: REST APIs, Java, PHP (Laravel/Symfony), event-driven systems
-  percentage: 90
-- name: Python
-  description: Flask, FastAPI, Equipment framework, data processing
-  percentage: 90
-- name: Databases & Messaging
-  description: MySQL, PostgreSQL, MongoDB, Redis, Apache Pulsar, AWS SQS
-  percentage: 85
-- name: DevOps & Observability
-  description: Grafana, Datadog, ELK Stack, Jenkins CI/CD, SonarQube
-  percentage: 80
-- name: JavaScript / TypeScript
-  description: React, Vue, Alpine.js, Hono.dev and Node.js
-  percentage: 80
-- name: PHP
-  description: Laravel, Symfony, Slim
-  percentage: 90
+# Each item feeds the website, resume.pdf, llms.txt and the schema.org knowsAbout list.
+- name: Architecture
+  items:
+    - Distributed systems
+    - event-driven architecture
+    - microservices
+    - REST API design
+    - legacy modernisation
+- name: Backend
+  items:
+    - PHP (Laravel, Symfony, Slim)
+    - Python (FastAPI, Flask)
+    - Java
+- name: Cloud & containers
+  items:
+    - AWS
+    - Cloudflare
+    - DigitalOcean
+    - Docker
+    - Kubernetes
+- name: Data & messaging
+  items:
+    - MySQL
+    - PostgreSQL
+    - MongoDB
+    - Redis
+    - Apache Pulsar
+    - AWS SQS
+    - Redis Pub/Sub
+- name: Reliability & delivery
+  items:
+    - Grafana
+    - Datadog
+    - ELK Stack
+    - Jenkins CI/CD
+    - SonarQube
+    - incident management
+    - postmortems
+- name: Frontend & tooling
+  items:
+    - JavaScript
+    - TypeScript
+    - Node.js
+    - Hono
+    - React
+    - Inertia.js
+    - Vue
+    - Alpine.js

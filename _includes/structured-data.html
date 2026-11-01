@@ -1,0 +1,184 @@
+{%- comment -%}
+    schema.org JSON-LD graph built from _data/*.yml:
+    WebSite, ProfilePage (Google's type for profile pages), Person with work history,
+    education and skills, the social preview images and an ItemList of open-source projects.
+{%- endcomment -%}
+{%- assign about = site.data.about -%}
+{%- assign base = site.url -%}
+{%- capture person %}{"@id": {{ base | append: '/#person' | jsonify }}}{% endcapture -%}
+{%- assign schools = site.data.education | map: 'school' | uniq -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ base | append: '/#website' | jsonify }},
+      "url": {{ base | append: '/' | jsonify }},
+      "name": {{ about.name | jsonify }},
+      "description": {{ about.seo_description | strip | jsonify }},
+      "inLanguage": {{ site.lang | jsonify }},
+      "author": {{ person }},
+      "publisher": {{ person }},
+      "copyrightHolder": {{ person }}
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": {{ base | append: '/#profilepage' | jsonify }},
+      "url": {{ base | append: '/' | jsonify }},
+      "name": {{ about.seo_title | jsonify }},
+      "description": {{ about.seo_description | strip | jsonify }},
+      "inLanguage": {{ site.lang | jsonify }},
+      "isPartOf": {"@id": {{ base | append: '/#website' | jsonify }}},
+      "about": {{ person }},
+      "mainEntity": {{ person }},
+      "primaryImageOfPage": {"@id": {{ base | append: '/#photo' | jsonify }}},
+      "image": {"@id": {{ base | append: '/#ogimage' | jsonify }}},
+      "dateModified": {{ site.time | date_to_xmlschema | jsonify }},
+      "significantLink": [
+        {{ base | append: '/resume.pdf' | jsonify }},
+        {{ base | append: '/llms.txt' | jsonify }},
+        {{ base | append: '/resume.json' | jsonify }}
+      ]
+    },
+    {
+      "@type": "ImageObject",
+      "@id": {{ base | append: '/#photo' | jsonify }},
+      "url": {{ about.photo | jsonify }},
+      "contentUrl": {{ about.photo | jsonify }},
+      "width": 600,
+      "height": 600,
+      "caption": {{ about.name | jsonify }}
+    },
+    {
+      "@type": "ImageObject",
+      "@id": {{ base | append: '/#ogimage' | jsonify }},
+      "url": {{ about.og_image | prepend: base | jsonify }},
+      "contentUrl": {{ about.og_image | prepend: base | jsonify }},
+      "width": 1200,
+      "height": 630,
+      "caption": {{ about.og_image_alt | jsonify }}
+    },
+    {
+      "@type": "Person",
+      "@id": {{ base | append: '/#person' | jsonify }},
+      "name": {{ about.name | jsonify }},
+      "givenName": {{ about.given_name | jsonify }},
+      "familyName": {{ about.family_name | jsonify }},
+      "url": {{ base | append: '/' | jsonify }},
+      "image": {"@id": {{ base | append: '/#photo' | jsonify }}},
+      "email": {{ about.email | jsonify }},
+      "jobTitle": {{ about.role | jsonify }},
+      "description": {{ about.summary | remove: '**' | strip | jsonify }},
+      "mainEntityOfPage": {"@id": {{ base | append: '/#profilepage' | jsonify }}},
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": {{ about.address.locality | jsonify }},
+        "addressRegion": {{ about.address.region | jsonify }},
+        "addressCountry": {{ about.address.country | jsonify }}
+      },
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": {{ about.role | jsonify }},
+        "description": {{ about.tagline | jsonify }},
+        "occupationLocation": {"@type": "City", "name": "Barcelona"},
+        "skills": {% capture skills_text %}{% for skill in site.data.skills %}{% for item in skill.items %}{{ item }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endcapture %}{{ skills_text | jsonify }}
+      },
+      "knowsAbout": [
+        {%- for skill in site.data.skills %}{% for item in skill.items %}
+        {{ item | jsonify }}{% unless forloop.last %},{% endunless %}{% endfor %}{% unless forloop.last %},{% endunless %}{% endfor %}
+      ],
+      "worksFor": [
+        {%- assign first_current = true %}{% for job in site.data.resume %}{% unless job.end_date %}{% unless first_current %},{% endunless %}{% assign first_current = false %}
+        {
+          "@type": "EmployeeRole",
+          "roleName": {{ job.title | jsonify }},
+          "startDate": {{ job.start_date | date: '%Y-%m-%d' | jsonify }},
+          {%- if job.note %}
+          "description": {{ job.note | jsonify }},
+          {%- endif %}
+          "worksFor": {"@type": "Organization", "name": {{ job.company | jsonify }}, "address": {"@type": "PostalAddress", "addressLocality": {{ job.location | jsonify }}}}
+        }{% endunless %}{% endfor %}
+      ],
+      "alumniOf": [
+        {%- for job in site.data.resume %}{% if job.end_date %}
+        {
+          "@type": "OrganizationRole",
+          "roleName": {{ job.title | jsonify }},
+          "startDate": {{ job.start_date | date: '%Y-%m-%d' | jsonify }},
+          "endDate": {{ job.end_date | date: '%Y-%m-%d' | jsonify }},
+          {%- if job.note %}
+          "description": {{ job.note | jsonify }},
+          {%- endif %}
+          "alumniOf": {"@type": "Organization", "name": {{ job.company | jsonify }}, "address": {"@type": "PostalAddress", "addressLocality": {{ job.location | jsonify }}}}
+        },{% endif %}{% endfor %}
+        {%- for school in schools %}{% assign edu = site.data.education | where: 'school', school | first %}
+        {
+          "@type": "EducationalOrganization",
+          "name": {{ school | jsonify }},
+          "address": {"@type": "PostalAddress", "addressLocality": {{ edu.location | jsonify }}}
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ],
+      "hasCredential": [
+        {%- for edu in site.data.education %}
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": {{ edu.title | jsonify }},
+          "dateCreated": {{ edu.end_date | date: '%Y-%m-%d' | jsonify }},
+          "recognizedBy": {"@type": "EducationalOrganization", "name": {{ edu.school | jsonify }}}
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ],
+      "sameAs": [
+        {{ about.github | jsonify }},
+        {{ about.linkedin | jsonify }},
+        {{ about.stack-overflow | jsonify }},
+        {{ 'https://twitter.com/' | append: site.twitter.username | jsonify }}{% if site.blog %},
+        {{ site.blog | jsonify }}{% endif %}
+      ],
+      "subjectOf": {
+        "@type": "DigitalDocument",
+        "name": {{ about.name | append: ' resume (PDF)' | jsonify }},
+        "url": {{ base | append: '/resume.pdf' | jsonify }},
+        "encodingFormat": "application/pdf",
+        "inLanguage": {{ site.lang | jsonify }},
+        "author": {{ person }}
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": {{ base | append: '/#projects' | jsonify }},
+      "name": "Open-source projects",
+      "numberOfItems": {{ site.data.projects | size }},
+      "itemListElement": [
+        {%- for project in site.data.projects %}
+        {
+          "@type": "ListItem",
+          "position": {{ forloop.index }},
+          "item": {
+            "@type": "SoftwareSourceCode",
+            "name": {{ project.name | jsonify }},
+            "description": {{ project.description | replace: '<br>', '' | strip_html | normalize_whitespace | jsonify }},
+            "url": {{ project.url | jsonify }},
+            {%- if project.url contains 'github.com' %}
+            "codeRepository": {{ project.url | jsonify }},
+            {%- endif %}
+            {%- if project.image and project.image != '' %}
+            "image": {{ project.image | jsonify }},
+            {%- endif %}
+            {%- if project.language %}
+            "programmingLanguage": {{ project.language | jsonify }},
+            {%- else %}{% case project.category %}{% when 1 %}
+            "programmingLanguage": "PHP",{% when 2 %}
+            "programmingLanguage": "Python",{% when 4 %}
+            "programmingLanguage": "TypeScript",{% endcase %}{% endif %}
+            "author": {{ person }}
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }
+  ]
+}
+</script>

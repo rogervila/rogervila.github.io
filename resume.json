@@ -1,0 +1,353 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Roger Vilà",
+    "label": "Software Architect",
+    "image": "https://res.cloudinary.com/rogervila/image/upload/f_jpg,q_auto:best,w_600,h_600,c_fill,g_face/roger-vila-camon.jpg",
+    "email": "rogervila@me.com",
+    "url": "https://rogervila.es",
+    "summary": "Software architect with 13 years of professional experience. Architected a 10+ service, event-driven platform on Kubernetes for HP, and now modernise legacy Java and PHP SaaS APIs on AWS and Cloudflare at InfoPro Digital Automotive. Builds secure REST APIs and event-driven integrations (Apache Pulsar, AWS SQS), implements observability (Grafana, Datadog, ELK Stack) and manages incident response. Former founder of a web development company and startup tech lead who took a restaurant product from scratch to an MVP launched for investors.",
+    "location": {
+      "city": "Sitges",
+      "region": "Catalonia",
+      "countryCode": "ES"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "rogervila",
+        "url": "https://github.com/rogervila"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "rogervilacamon",
+        "url": "https://es.linkedin.com/in/rogervilacamon"
+      },
+      {
+        "network": "Stack Overflow",
+        "username": "rogervila",
+        "url": "https://stackoverflow.com/users/3333549/rogervila"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "InfoPro Digital Automotive",
+      "position": "Senior Software Developer",
+      "location": "Barcelona",
+      "description": "Main B2B platform for car parts distributors in the Spanish market",
+      "startDate": "2024-09-16",
+      "highlights": [
+        "Reduced production incidents by 20% through systematic refactoring, stronger test coverage and safer deployment practices.",
+        "Modernise legacy Java and PHP SaaS APIs on AWS and Cloudflare that integrate data from multiple providers; chose Cloudflare edge caching over scaling the AWS origin because traffic was mostly read-heavy lookups, which cut origin load and cost.",
+        "Manage incident response: severity-based triage, resolution estimates and structured postmortems to drive long-term reliability improvements.",
+        "Mentor junior developers through code reviews and shared backend engineering practices."
+      ]
+    },
+    {
+      "name": "Wivapp.com",
+      "position": "Tech Lead",
+      "location": "Barcelona",
+      "startDate": "2024-02-19",
+      "endDate": "2024-09-16",
+      "highlights": [
+        "Led development of a new restaurant product from scratch, built with Laravel, Inertia.js and React on DigitalOcean Kubernetes.",
+        "Chose a modular monolith over microservices to deliver the MVP in 3 months, then launched it to present the product to investors.",
+        "Stepped down when the venture did not move past the investor stage."
+      ]
+    },
+    {
+      "name": "Convelio",
+      "position": "Senior Backend Developer",
+      "location": "Paris, France",
+      "description": "Logistics scale-up, €30M Series B (2022)",
+      "startDate": "2022-05-01",
+      "endDate": "2024-02-19",
+      "highlights": [
+        "Designed and maintained secure PHP APIs for a high-volume logistics platform serving 1,000+ clients per week, meeting its availability SLA.",
+        "Improved API performance and reliability, cutting response times by 200–500 ms per request; implemented observability with Grafana, Datadog and the ELK Stack.",
+        "Centralised the API contract in the OpenAPI Specification (formerly known as Swagger) so multiple frontends consumed one backend API; OpenAPI contract tests let frontend and backend teams evolve independently without breaking changes.",
+        "Removed 10,000+ lines of dead and unsafe legacy code, improving security, performance and maintainability.",
+        "Raised code quality through automated testing and peer code reviews."
+      ]
+    },
+    {
+      "name": "HP",
+      "position": "Senior Programming Analyst",
+      "location": "Barcelona",
+      "description": "Consultant at HP through K-LAGAN",
+      "startDate": "2017-08-17",
+      "endDate": "2022-05-01",
+      "highlights": [
+        "Architected and operated a distributed platform of 10+ Docker-based microservices on Kubernetes in production, processing data from 3,000+ high-value customers that fed business-critical automated decisions.",
+        "Designed event-driven integrations with Apache Pulsar, AWS SQS and Redis Pub/Sub to decouple services for scalability and fault tolerance; chose AWS SQS over self-hosted RabbitMQ for cloud workloads because a managed queue removed broker operations from a small team.",
+        "Built secure API integrations and background processing in Laravel, and data pipelines and robotic process automation (RPA) in Python.",
+        "Built and maintained Jenkins CI/CD pipelines with SonarQube quality checks, reaching 80% code coverage across the platform.",
+        "Led remote engineering teams across Europe and Asia, running architecture reviews, code reviews and technical mentorship."
+      ]
+    },
+    {
+      "name": "Health Dataline Europe SA",
+      "position": "Full Stack Developer",
+      "location": "Barcelona",
+      "startDate": "2017-03-01",
+      "endDate": "2017-08-17",
+      "summary": "Rebuilt the mobile front end of 10+ client eCommerce sites and built internal data APIs.",
+      "highlights": [
+        "Rebuilt the front end of 10+ client eCommerce websites for mobile devices with Onsen UI.",
+        "Built internal APIs that retrieve data from multiple backend sources."
+      ]
+    },
+    {
+      "name": "SeeDoCare S.L.",
+      "position": "Co-Founder & CEO",
+      "location": "Barcelona",
+      "description": "Run in parallel with employed roles",
+      "startDate": "2015-10-08",
+      "endDate": "2017-03-01",
+      "summary": "Founded and ran a web development company in parallel with employed roles; won 3 clients in year one.",
+      "highlights": [
+        "Founded and ran a web development company; won 3 clients in the first year and delivered custom eCommerce, SaaS and CMS solutions at 20% lower cost than competing B2B platforms.",
+        "Expanded the offer with SEO, brand design and marketing services.",
+        "Closed the company in 2017 and moved to full-time employment."
+      ]
+    },
+    {
+      "name": "Emotion Experience",
+      "position": "Software Developer",
+      "location": "Barcelona",
+      "startDate": "2016-11-01",
+      "endDate": "2017-02-01",
+      "summary": "Built interactive brand installations for GFT, including the GFT Lab, driving LED displays and interactive panels.",
+      "highlights": [
+        "Built interactive brand experiences for GFT, with custom software for LED displays and interactive panels.",
+        "Developed the software for the \"GFT Lab\" installation."
+      ]
+    },
+    {
+      "name": "Caravelo",
+      "position": "Web Developer",
+      "location": "Barcelona",
+      "startDate": "2015-11-01",
+      "endDate": "2016-11-01",
+      "summary": "Built Volado Volaris, a last-minute fare product for Volaris airline, and a design system used by 2 new airlines.",
+      "highlights": [
+        "Built \"Volado Volaris\", a product selling last-minute fares for empty seats on Volaris flights; shipped the first release in 1 month.",
+        "Created a design system to integrate new airlines into the company's products; 2 new airlines used it.",
+        "Maintained product websites for airline customers."
+      ]
+    },
+    {
+      "name": "SIQUR S.P.A.",
+      "position": "Web Developer",
+      "location": "Italy",
+      "startDate": "2015-04-17",
+      "endDate": "2015-11-01",
+      "summary": "Built the Spanish eCommerce site and a content blog; ran SEO, analytics and campaigns.",
+      "highlights": [
+        "Built the Spanish version of the company's eCommerce website.",
+        "Launched a WordPress blog for content marketing and ran SEO, analytics and marketing campaigns."
+      ]
+    },
+    {
+      "name": "CIPSA",
+      "position": "Web Developer Instructor",
+      "location": "Barcelona",
+      "startDate": "2014-10-08",
+      "endDate": "2015-04-17",
+      "summary": "Taught full-stack web development to 50+ students; more than half found a job after the course.",
+      "highlights": [
+        "Hired as an instructor after completing the school's Web Development Master programme.",
+        "Taught full-stack web development to 50+ students, from a first HTML page to a final full-stack project.",
+        "More than 50% of students found a job after finishing the course."
+      ]
+    },
+    {
+      "name": "Mediterrani Food",
+      "position": "Web Developer",
+      "location": "Barcelona",
+      "startDate": "2013-05-01",
+      "endDate": "2014-06-21",
+      "summary": "Built the company website and content marketing that brought in 10+ new clients.",
+      "highlights": [
+        "Built and maintained the company's WordPress website and applied the brand design across web, reports and communications.",
+        "Wrote blog posts, edited videos, managed the community and ran SEO; this content brought in 10+ new clients."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "CIPSA",
+      "studyType": "Web Development Master",
+      "startDate": "2013-09-01",
+      "endDate": "2014-06-21"
+    },
+    {
+      "institution": "Conservatori Liceu",
+      "studyType": "Bachelor of Arts (B.A.)",
+      "startDate": "2010-09-01",
+      "endDate": "2014-06-21",
+      "area": "Music Theory and Composition"
+    },
+    {
+      "institution": "Sibelius Academy",
+      "studyType": "Bachelor of Arts (B.A.)",
+      "startDate": "2012-09-01",
+      "endDate": "2013-06-21",
+      "area": "Composition"
+    },
+    {
+      "institution": "Conservatori Liceu",
+      "studyType": "Associate's degree",
+      "startDate": "2008-09-01",
+      "endDate": "2010-06-21",
+      "area": "Music Performance, General"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Architecture",
+      "keywords": [
+        "Distributed systems",
+        "event-driven architecture",
+        "microservices",
+        "REST API design",
+        "legacy modernisation"
+      ]
+    },
+    {
+      "name": "Backend",
+      "keywords": [
+        "PHP (Laravel, Symfony, Slim)",
+        "Python (FastAPI, Flask)",
+        "Java"
+      ]
+    },
+    {
+      "name": "Cloud & containers",
+      "keywords": [
+        "AWS",
+        "Cloudflare",
+        "DigitalOcean",
+        "Docker",
+        "Kubernetes"
+      ]
+    },
+    {
+      "name": "Data & messaging",
+      "keywords": [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Apache Pulsar",
+        "AWS SQS",
+        "Redis Pub/Sub"
+      ]
+    },
+    {
+      "name": "Reliability & delivery",
+      "keywords": [
+        "Grafana",
+        "Datadog",
+        "ELK Stack",
+        "Jenkins CI/CD",
+        "SonarQube",
+        "incident management",
+        "postmortems"
+      ]
+    },
+    {
+      "name": "Frontend & tooling",
+      "keywords": [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "Hono",
+        "React",
+        "Inertia.js",
+        "Vue",
+        "Alpine.js"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Equipment",
+      "description": "Production-ready Python scaffolding framework for scalable backend projects",
+      "url": "https://equipment-python.vercel.app",
+      "keywords": [
+        "Python"
+      ]
+    },
+    {
+      "name": "soap-server-ts",
+      "description": "Fetch API-first TypeScript SOAP server for Cloudflare Workers and edge runtimes",
+      "url": "https://www.npmjs.com/package/soap-server-ts",
+      "keywords": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "container-di",
+      "description": "Lightweight PSR-11-style dependency injection container for TypeScript",
+      "url": "https://www.npmjs.com/package/container-di",
+      "keywords": [
+        "TypeScript"
+      ]
+    },
+    {
+      "name": "split-vendor-chunk-plugin",
+      "description": "Vite plugin that splits vendor chunks from node_modules into separate files",
+      "url": "https://www.npmjs.com/package/split-vendor-chunk-plugin",
+      "keywords": [
+        "JavaScript"
+      ]
+    },
+    {
+      "name": "Array Diff Multidimensional",
+      "description": "Compare the difference between two multidimensional arrays",
+      "url": "https://github.com/rogervila/array-diff-multidimensional",
+      "keywords": [
+        "PHP"
+      ]
+    },
+    {
+      "name": "Laravel Email Failer",
+      "description": "Assert what happens on your Laravel Application when an email fails to send",
+      "url": "https://github.com/rogervila/laravel-email-failer",
+      "keywords": [
+        "PHP"
+      ]
+    },
+    {
+      "name": "PHP SonarQube Scanner",
+      "description": "Integrate SonarQube static analysis into CI/CD pipelines via Composer",
+      "url": "https://github.com/rogervila/php-sonarqube-scanner",
+      "keywords": [
+        "PHP"
+      ]
+    },
+    {
+      "name": "Python Simple Rules Engine",
+      "description": "Simple rules engine written in Python",
+      "url": "https://github.com/rogervila/python_simple_rules_engine",
+      "keywords": [
+        "Python"
+      ]
+    },
+    {
+      "name": "Python DTO",
+      "description": "Data Transfer Objects (DTO) for Python backend applications",
+      "url": "https://github.com/rogervila/py_dto",
+      "keywords": [
+        "Python"
+      ]
+    }
+  ],
+  "meta": {
+    "canonical": "https://rogervila.es/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2026-11-01T10:39:48+00:00"
+  }
+}

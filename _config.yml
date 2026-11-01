@@ -73,6 +73,12 @@ exclude:
 - ".editorconfig"
 - ".gitignore"
 - ".dockerignore"
+- ".agents"
+- ".claude"
+- ".caveman.json"
+- AGENTS.md
+- CLAUDE.md
+- ".ruby-version"
 plugins:
 - jekyll-sitemap
 - jekyll-seo-tag

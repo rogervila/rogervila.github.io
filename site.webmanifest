@@ -1,6 +1,13 @@
 {
-    "name": "Senior Backend Developer - Roger Vilà",
+    "id": "/",
+    "name": "Roger Vilà - Software Architect",
     "short_name": "Roger Vilà",
+    "description": "Software architect: distributed systems, cloud and legacy modernisation.",
+    "lang": "en",
+    "dir": "ltr",
+    "start_url": "/",
+    "scope": "/",
+    "categories": ["business", "personalization"],
     "icons": [
         {
             "src": "/android-chrome-192x192.png",

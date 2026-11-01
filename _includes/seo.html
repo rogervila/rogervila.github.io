@@ -1,0 +1,86 @@
+{%- comment -%}
+    Search, social and identity metadata. Replaces {% seo %} from jekyll-seo-tag so every
+    value comes from _data/about.yml and nothing is emitted twice.
+{%- endcomment -%}
+{%- assign about = site.data.about -%}
+{%- assign canonical = page.url | replace: 'index.html', '' | prepend: site.url -%}
+{%- assign og_image = about.og_image | prepend: site.url -%}
+{%- capture keywords -%}{{ about.role }}{% for skill in site.data.skills %}{% for item in skill.items %}, {{ item }}{% endfor %}{% endfor %}{%- endcapture -%}
+
+    <title>{{ about.seo_title }}</title>
+    <meta name="description" content="{{ about.seo_description | strip }}">
+    <meta name="author" content="{{ about.name }}">
+    <meta name="keywords" content="{{ keywords | strip }}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="application-name" content="{{ about.name }}">
+    <meta name="apple-mobile-web-app-title" content="{{ about.name }}">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <link rel="canonical" href="{{ canonical }}">
+    <link rel="alternate" hreflang="en" href="{{ canonical }}">
+    <link rel="alternate" hreflang="x-default" href="{{ canonical }}">
+    <link rel="alternate" type="application/pdf" href="{{ '/resume.pdf' | prepend: site.url }}" title="{{ about.name }} resume (PDF)">
+    <link rel="alternate" type="text/plain" href="{{ '/llms.txt' | prepend: site.url }}" title="{{ about.name }} profile for LLMs">
+    <link rel="alternate" type="application/json" href="{{ '/resume.json' | prepend: site.url }}" title="{{ about.name }} resume (JSON Resume)">
+    <link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | prepend: site.url }}">
+    <link rel="author" type="text/plain" href="{{ '/humans.txt' | prepend: site.url }}">
+
+    {%- comment %} IndieWeb identity: rel="me" links verify the same person across profiles. {% endcomment %}
+    <link rel="me" href="{{ about.github }}">
+    <link rel="me" href="{{ about.linkedin }}">
+    <link rel="me" href="{{ about.stack-overflow }}">
+    <link rel="me" href="https://twitter.com/{{ site.twitter.username }}">
+    <link rel="me" href="mailto:{{ about.email }}">
+
+    {%- comment %} Open Graph (Facebook, LinkedIn, Slack, WhatsApp...). {% endcomment %}
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="{{ about.seo_title }}">
+    <meta property="og:description" content="{{ about.seo_description | strip }}">
+    <meta property="og:url" content="{{ canonical }}">
+    <meta property="og:site_name" content="{{ about.name }}">
+    <meta property="og:locale" content="{{ about.locale }}">
+    <meta property="og:image" content="{{ og_image }}">
+    <meta property="og:image:secure_url" content="{{ og_image }}">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{{ about.og_image_alt }}">
+    <meta property="profile:first_name" content="{{ about.given_name }}">
+    <meta property="profile:last_name" content="{{ about.family_name }}">
+    <meta property="profile:username" content="{{ about.github | split: '/' | last }}">
+
+    {%- comment %} Twitter / X card. {% endcomment %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@{{ site.twitter.username }}">
+    <meta name="twitter:creator" content="@{{ site.twitter.username }}">
+    <meta name="twitter:title" content="{{ about.seo_title }}">
+    <meta name="twitter:description" content="{{ about.seo_description | strip }}">
+    <meta name="twitter:image" content="{{ og_image }}">
+    <meta name="twitter:image:alt" content="{{ about.og_image_alt }}">
+
+    {%- comment %} Dublin Core, read by library and academic crawlers. {% endcomment %}
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+    <meta name="DC.title" content="{{ about.seo_title }}">
+    <meta name="DC.creator" content="{{ about.name }}">
+    <meta name="DC.description" content="{{ about.seo_description | strip }}">
+    <meta name="DC.subject" content="{{ keywords | strip }}">
+    <meta name="DC.language" content="{{ site.lang }}">
+    <meta name="DC.type" content="Text">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.identifier" content="{{ canonical }}">
+    <meta name="DC.date" content="{{ site.time | date: '%Y-%m-%d' }}">
+
+    {%- comment %} Location, town level only. {% endcomment %}
+    <meta name="geo.region" content="{{ about.address.region_code }}">
+    <meta name="geo.placename" content="{{ about.address.locality }}">
+    <meta name="geo.position" content="{{ about.address.latitude }};{{ about.address.longitude }}">
+    <meta name="ICBM" content="{{ about.address.latitude }}, {{ about.address.longitude }}">
+
+    {%- comment %} Search engine ownership verification. {% endcomment %}
+    {%- if site.webmaster_verifications.google %}
+    <meta name="google-site-verification" content="{{ site.webmaster_verifications.google }}">
+    {%- endif %}
+    {%- if site.webmaster_verifications.bing %}
+    <meta name="msvalidate.01" content="{{ site.webmaster_verifications.bing }}">
+    {%- endif %}

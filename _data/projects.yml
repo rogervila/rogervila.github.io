@@ -1,3 +1,8 @@
+# category: 1 PHP, 2 Python, 3 AI, 4 JavaScript / TypeScript (filter buttons on the website).
+# language: optional exact programming language for schema.org and resume.json
+#           (defaults to the category language; category 4 defaults to TypeScript).
+# image is optional. Projects without an image, or with an image that fails to load,
+# show a ui-avatars.com image with the project initials.
 - name: Equipment
   category: 2
   description: Production-ready Python <br> scaffolding framework for scalable backend projects
@@ -5,6 +10,34 @@
   image: https://equipment-python.vercel.app/img/logo.svg
   badges:
     - https://img.shields.io/pypi/dm/equipment.svg?style=social
+
+- name: soap-server-ts
+  category: 4
+  description: Fetch API-first TypeScript SOAP server <br> for Cloudflare Workers and edge runtimes
+  url: https://www.npmjs.com/package/soap-server-ts
+  image: https://banners.beyondco.de/soap-server-ts.png?theme=light&packageManager=npm+install&packageName=soap-server-ts&pattern=architect&style=style_1&description=Fetch+API-first+TypeScript+SOAP+server+inspired+by+PHP+SoapServer.&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FTypeScript-Website%2Fv2%2Fpackages%2Ftypescriptlang-org%2Fstatic%2Fbranding%2Fts-logo-512.svg
+  badges:
+    - https://img.shields.io/npm/dm/soap-server-ts.svg?style=social
+    - https://img.shields.io/github/stars/rogervila/soap-server-ts.svg?style=social
+
+- name: container-di
+  category: 4
+  description: Lightweight PSR-11-style dependency <br> injection container for TypeScript
+  url: https://www.npmjs.com/package/container-di
+  image: https://banners.beyondco.de/container-di.png?theme=light&packageManager=npm+install&packageName=container-di&pattern=architect&style=style_1&description=Lightweight+PSR-11-style+dependency+injection+container+for+TypeScript.&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Fraw.githubusercontent.com%2Fmicrosoft%2FTypeScript-Website%2Fv2%2Fpackages%2Ftypescriptlang-org%2Fstatic%2Fbranding%2Fts-logo-512.svg
+  badges:
+    - https://img.shields.io/npm/dm/container-di.svg?style=social
+    - https://img.shields.io/github/stars/rogervila/container-di.svg?style=social
+
+- name: split-vendor-chunk-plugin
+  category: 4
+  language: JavaScript
+  description: Vite plugin that splits vendor chunks <br> from node_modules into separate files
+  url: https://www.npmjs.com/package/split-vendor-chunk-plugin
+  image: https://banners.beyondco.de/split-vendor-chunk-plugin.png?theme=light&packageManager=npm+install+--save-dev&packageName=split-vendor-chunk-plugin&pattern=architect&style=style_1&description=Vite+plugin+to+split+vendor+chunks.&md=1&showWatermark=1&fontSize=100px&images=https%3A%2F%2Fvite.dev%2Flogo.svg
+  badges:
+    - https://img.shields.io/npm/dm/split-vendor-chunk-plugin.svg?style=social
+    - https://img.shields.io/github/stars/rogervila/split-vendor-chunk-plugin.svg?style=social
 
 - name: Array Diff Multidimensional
   category: 1
@@ -32,15 +65,6 @@
   badges:
     - https://poser.pugx.org/rogervila/php-sonarqube-scanner/downloads
     - https://img.shields.io/github/stars/rogervila/php-sonarqube-scanner.svg?style=social
-
-- name: Provably Fair
-  category: 1
-  description: PHP implementation of Bustabit's <br> Provably Fair system
-  url: https://github.com/rogervila/provably-fair
-  image: https://i.imgur.com/Z0QCVwf.jpg
-  badges:
-    - https://poser.pugx.org/rogervila/provably-fair/downloads
-    - https://img.shields.io/github/stars/rogervila/provably-fair.svg?style=social
 
 - name: Python Simple Rules Engine
   category: 2

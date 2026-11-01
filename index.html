@@ -3,10 +3,11 @@
 
 {% include header.html %}
 
-<div class="main-content pull-right">
+<main id="main" class="main-content pull-right h-resume" tabindex="-1">
+    <data class="p-name" value="{{ site.data.about.name }} - {{ site.data.about.role }} resume"></data>
     {% include about.html %}
     {% include resume.html %}
     {% include education.html %}
     {% include projects.html %}
     {% include testimonials.html %}
-</div>
+</main>

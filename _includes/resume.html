@@ -1,7 +1,7 @@
-<section id="experience" class="resume">
+<section id="experience" class="resume" aria-labelledby="experience-title">
 
     <div class="section-header">
-        <h2>Resume</h2>
+        <h2 id="experience-title">Resume</h2>
 
     </div>
 
@@ -9,33 +9,30 @@
 
         {% for job in site.data.resume %}
         <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="{% if forloop.index == 1 %}top-item {% endif %}resume-item">
-                <h3>{{ job.title }} | {{ job.company }}</h3>
+            <article class="{% if forloop.index == 1 %}top-item {% endif %}resume-item p-experience h-event">
+                <h3 class="p-name">{{ job.title }} | {{ job.company }}</h3>
                 <span>
-                    <time datetime="{{ job.start_date }}">{{ job.start_date | date: "%B %Y" }}</time>
+                    <time class="dt-start" datetime="{{ job.start_date | date: '%Y-%m' }}">{{ job.start_date | date: "%B %Y" }}</time>
                     -
-                    {% if forloop.index == 1 %}
-                    Present
+                    {% if job.end_date %}
+                    <time class="dt-end" datetime="{{ job.end_date | date: '%Y-%m' }}">{{ job.end_date | date: "%B %Y" }}</time>
                     {% else %}
-                    <time datetime="{{ job.end_date }}">
-                        {{ job.end_date | date: "%B %Y" }}
-                    </time>
+                    Present
                     {% endif %}
                     |
-                    {{ job.location }}
+                    <data class="p-location" value="{{ job.location }}">{{ job.location }}</data>
+                    {% if job.note %}
+                    | {{ job.note }}
+                    {% endif %}
                 </span>
-                <ul>
-                    {% for goal in job.goals %}
-                    <li>{{ goal }}</li>
+                <ul class="e-description">
+                    {% for highlight in job.highlights %}
+                    <li>{{ highlight | markdownify | remove: "<p>" | remove: "</p>" | strip }}</li>
                     {% endfor %}
                 </ul>
-            </div>
+            </article>
         </div>
         {% endfor %}
-
-        <!-- Page 1 End -->
-
-
 
     </div>
 
