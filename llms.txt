@@ -1,6 +1,7 @@
 ---
-layout: null
+layout: 
 ---
+
 {%- assign about = site.data.about -%}
 # {{ about.name }} - {{ about.role }}
 
